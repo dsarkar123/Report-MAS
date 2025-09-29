@@ -1,0 +1,15 @@
+# LlamaIndex storage
+storage/
+
+# Generated reports
+*.xlsx
+*.txt
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# IDE files
+.idea/
+.vscode/

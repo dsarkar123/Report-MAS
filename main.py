@@ -190,7 +190,7 @@ def create_agent(index):
         tools=[query_engine_tool],
         llm=Settings.llm,
         verbose=True,
-        timeout=120,
+        timeout=300,
     )
     print("ReAct agent created.")
     return agent

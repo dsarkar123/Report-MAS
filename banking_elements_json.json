@@ -1,0 +1,808 @@
+{
+  "banking_elements_categorization": {
+    "service_domains": [
+      {
+        "domain_name": "Account Management",
+        "data_owner": "Jane Doe",
+        "definition": "A collection of service domain responsible for handling various aspects of banking account operations",
+        "subdomains": [
+          {
+            "subdomain_name": "Account Maintenance",
+            "elements": [
+              {
+                "name": "Account",
+                "description": "Container for records associated with a business arrangement for regular transactions and services"
+              },
+              {
+                "name": "Account As An Asset",
+                "description": "Financial asset in the form of an account"
+              },
+              {
+                "name": "Account Holder",
+                "description": "Party that owns an account"
+              },
+              {
+                "name": "Account Identifier",
+                "description": "Identifier that denotes an account"
+              },
+              {
+                "name": "Account Ownership",
+                "description": "Holding of an account"
+              },
+              {
+                "name": "Account Provider",
+                "description": "Party that provides and services an account"
+              },
+              {
+                "name": "Account Specific Service Agreement",
+                "description": "Service-agreement that is account-specific, applicable in cases where a client might hold multiple accounts with differing terms and conditions"
+              },
+              {
+                "name": "Account Statement",
+                "description": "Periodic summary of account activity for a given period of time"
+              },
+              {
+                "name": "Accounting Transaction",
+                "description": "Event recognized by an entry in the records of an account"
+              },
+              {
+                "name": "applies To Account",
+                "description": "Indicates the account to which the transaction record or individual transaction applies"
+              },
+              {
+                "name": "Balance",
+                "description": "Amount of money available or owed"
+              },
+              {
+                "name": "Bank Account Identifier",
+                "description": "Identifier that identifies a demand deposit account provided by a bank"
+              },
+              {
+                "name": "Basic Bank Account Identifier",
+                "description": "Identifier that uniquely identifies an individual account at a specific financial institution in a particular country and which includes a bank identifier of the financial institution servicing that account"
+              },
+              {
+                "name": "Cash Account",
+                "description": "An investment account where all transactions must be settled with cash in the account, as opposed to a margin account"
+              },
+              {
+                "name": "Client Account",
+                "description": "An account held by a service provider on behalf of a client to manage their assets or transactions"
+              },
+              {
+                "name": "Demand Deposit",
+                "description": "A bank account (like a checking account) from which funds can be withdrawn at any time without advance notice"
+              },
+              {
+                "name": "Deposit Account",
+                "description": "An account held at a financial institution where funds are placed for safekeeping and can be withdrawn under certain conditions"
+              }
+            ]
+          },
+          {
+            "subdomain_name": "Account Closure",
+            "elements": [
+              {
+                "name": "Account Change Notification Obligation",
+                "description": "Obligation to notify a counterparty of any changes in account details"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain_name": "Customer Relationship Management",
+        "data_owner": "Jane Doe",
+        "definition": "The domain governs the full lifecycle of customer engagement, including onboarding, relationship development and eventual closure",
+        "subdomains": [
+          {
+            "subdomain_name": "Customer Profile",
+            "elements": [
+              {
+                "name": "Adult",
+                "description": "Person who has attained the age of majority as defined in some jurisdiction"
+              },
+              {
+                "name": "Age",
+                "description": "Length of time that something or someone has been alive or existed"
+              },
+              {
+                "name": "Age Of Majority",
+                "description": "Age at which someone acquires the rights and responsibilities of an adult in some jurisdiction"
+              },
+              {
+                "name": "Agent For Service Of Process",
+                "description": "Registered agent (person or organization) designated by a business entity, such as a corporation, to receive legal correspondence on behalf of the business entity in the jurisdiction in which the agent's address is located"
+              },
+              {
+                "name": "Authorized Party",
+                "description": "Party that has been given the responsibility to act on behalf of another party under some set of guidelines"
+              },
+              {
+                "name": "Beneficial Owner",
+                "description": "Party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) may be in the name of another party (called a nominee or registered owner)"
+              },
+              {
+                "name": "Beneficiary",
+                "description": "Party that receives some benefit or advantage or profits from something"
+              },
+              {
+                "name": "Birth Certificate",
+                "description": "An original document certifying the circumstances of the birth, or a certified copy of or representation of the ensuing registration of that birth"
+              },
+              {
+                "name": "Birth Certificate Identification Scheme",
+                "description": "System for allocating identifiers to birth certificates"
+              },
+              {
+                "name": "Birth Certificate Identifier",
+                "description": "Identifier associated with a vital record documenting the birth of a child"
+              },
+              {
+                "name": "Child",
+                "description": "A young human being below the age of full legal responsibility"
+              },
+              {
+                "name": "Citizenship",
+                "description": "The status of being a legally recognized member of a country, state, or commonwealth"
+              },
+              {
+                "name": "Client",
+                "description": "A party that purchases goods or services from another party"
+              },
+              {
+                "name": "Consumer",
+                "description": "A party that purchases goods and services for personal use rather than for manufacture or resale"
+              },
+              {
+                "name": "Customer",
+                "description": "A party who receives a service or product from a seller or service provider"
+              },
+              {
+                "name": "Date Of Birth",
+                "description": "The day, month, and year a person was born"
+              },
+              {
+                "name": "Dependent Child",
+                "description": "A child who relies on another person (parent or guardian) for financial support"
+              },
+              {
+                "name": "Business Address",
+                "description": "A specific location where a business is conducted or where legal correspondence and official documents can be delivered"
+              },
+              {
+                "name": "Business Entity",
+                "description": "An organization formed to conduct business, engage in commerce, or carry out a mission, whether for-profit or not-for-profit"
+              },
+              {
+                "name": "Business Identifier",
+                "description": "A unique code or number assigned to a legal entity to identify it in various business or legal contexts"
+              },
+              {
+                "name": "Business Legal Name",
+                "description": "The official and registered full name of a business entity"
+              }
+            ]
+          },
+          {
+            "subdomain_name": "Customer Interaction",
+            "elements": [
+              {
+                "name": "Address",
+                "description": "Index to a location to which communications may be delivered"
+              },
+              {
+                "name": "Address Component",
+                "description": "Aspect of an address"
+              },
+              {
+                "name": "Addressing Scheme",
+                "description": "System for allocating addresses to objects"
+              },
+              {
+                "name": "advises",
+                "description": "Provides counsel or guidance to"
+              },
+              {
+                "name": "Communication Address",
+                "description": "An address used for transmitting information, which can be physical (postal) or electronic (email)"
+              },
+              {
+                "name": "Communication Channel",
+                "description": "The medium or pathway through which information is transmitted from a sender to a receiver"
+              },
+              {
+                "name": "Complaint",
+                "description": "A formal statement alleging a grievance or wrong, typically filed with a regulatory body or in a court of law"
+              },
+              {
+                "name": "Consent",
+                "description": "A voluntary agreement to a proposition or action"
+              },
+              {
+                "name": "Contact Information",
+                "description": "Data used to communicate with a party, such as a phone number, email address, or postal address"
+              },
+              {
+                "name": "Contact Point",
+                "description": "A specific individual or department designated for communication within an organization"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain_name": "Loan Management",
+        "data_owner": "John Smith",
+        "definition": "This domain is responsible for the servicing and administration of loan agreements throughout their lifecycles",
+        "subdomains": [
+          {
+            "subdomain_name": "Loan Origination",
+            "elements": [
+              {
+                "name": "Accrued Interest",
+                "description": "Amount of interest that has been incurred, as of a specific date, on a loan or other financial obligation but has not yet been paid out"
+              },
+              {
+                "name": "Administrative Agent",
+                "description": "Role of a financial institution (often one of the primary lenders in the syndicate) designated to act as an intermediary between the borrowers and the syndicate lenders"
+              },
+              {
+                "name": "Agency Agreement",
+                "description": "Agreement that designates a party as a registered agent to represent and act on behalf of another"
+              },
+              {
+                "name": "Agreement",
+                "description": "Negotiated understanding between two or more parties, reflecting the offer and acceptance of commitments on the part of either party"
+              },
+              {
+                "name": "Amortization",
+                "description": "The process of reduction of debt or other costs through periodic charges to assets or liabilities, such as through principal payments on mortgages"
+              },
+              {
+                "name": "Amortization Schedule",
+                "description": "Schedule of periodic payments (repayment installments) that specify changes in the balance of the debt over time"
+              },
+              {
+                "name": "Appraisal",
+                "description": "Written estimate of the market value of something as of some point in time, typically provided by a qualified appraiser"
+              },
+              {
+                "name": "Appraised Value",
+                "description": "Estimated value of some asset as of a given point in time"
+              },
+              {
+                "name": "Appraiser",
+                "description": "Party that evaluates or estimates the nature, quality, ability, or value of someone or something"
+              },
+              {
+                "name": "Base Rate",
+                "description": "Basic rate of interest on which the actual rate a bank charges on loans to its customers is calculated"
+              },
+              {
+                "name": "Closed-End Mortgage",
+                "description": "A mortgage agreement that prevents the borrower from taking out additional funds against the property"
+              },
+              {
+                "name": "Collateral",
+                "description": "An asset or property pledged by a borrower to a lender to secure a loan; it may be seized by the lender if the borrower defaults"
+              },
+              {
+                "name": "Collateral Agreement",
+                "description": "A legal contract documenting the terms under which collateral is provided to secure a financial obligation"
+              },
+              {
+                "name": "Conventional Mortgage",
+                "description": "A home loan that is not guaranteed or insured by a government agency like the FHA or VA"
+              },
+              {
+                "name": "Covenant",
+                "description": "A formal agreement or promise, often legally binding, included in a loan or bond agreement"
+              },
+              {
+                "name": "Credit Facility",
+                "description": "A type of loan or financing arrangement that allows a business to borrow funds up to a certain limit"
+              },
+              {
+                "name": "Credit Rating",
+                "description": "An assessment of the creditworthiness of a borrower in general or with respect to a specific debt or financial obligation"
+              },
+              {
+                "name": "Credit Risk",
+                "description": "The potential that a borrower will default on a debt obligation"
+              }
+            ]
+          },
+          {
+            "subdomain_name": "Loan Fulfilment",
+            "elements": [
+              {
+                "name": "Absolute Prepayment Rate",
+                "description": "Measure of the monthly rate of loan prepayments as a percentage of the original pool balance"
+              },
+              {
+                "name": "Accrual",
+                "description": "The process of accumulating interest or other income that has been earned but not paid"
+              },
+              {
+                "name": "Auto Asset Backed Security",
+                "description": "Asset-backed security that is backed by an underlying pool of auto-related loans and/or leases"
+              },
+              {
+                "name": "Auto Debt Pool",
+                "description": "Debt pool of loans and/or leases that are motor vehicle-related"
+              },
+              {
+                "name": "Debt",
+                "description": "An obligation that requires one party (the debtor) to pay money or transfer other agreed-upon value to another party (the creditor)"
+              },
+              {
+                "name": "Debt Obligation",
+                "description": "A specific requirement to repay a debt, often defined by a schedule and set of terms"
+              },
+              {
+                "name": "Debt Pool",
+                "description": "A collection of various debt instruments grouped together, often used as the underlying assets for a structured finance product"
+              },
+              {
+                "name": "Debtor",
+                "description": "The party that owes a debt or is under a financial obligation to another party"
+              },
+              {
+                "name": "Default",
+                "description": "A failure to meet the legal obligations (or terms) of a loan, such as when a borrower fails to make a required interest or principal payment"
+              },
+              {
+                "name": "Default Risk",
+                "description": "The risk of loss due to a debtor's failure to repay a loan or meet contractual obligations"
+              },
+              {
+                "name": "Disbursement",
+                "description": "The action of paying out money"
+              },
+              {
+                "name": "Collection Agency",
+                "description": "A business that specializes in collecting debts for creditors"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain_name": "Investment Portfolio Management",
+        "data_owner": "John Smith",
+        "definition": "Orchestrating the investment and rebalancing of an investment portfolio to optimize gains while remaining within the terms of portfolio charter or agreement",
+        "subdomains": [
+          {
+            "subdomain_name": "Portfolio Analysis",
+            "elements": [
+              {
+                "name": "Annualized Standard Deviation",
+                "description": "Standard deviation for some measure over a specific reference period"
+              },
+              {
+                "name": "applies Methodology",
+                "description": "Indicates the strategy used for the purposes of determining the fair market or present value of something"
+              },
+              {
+                "name": "Arithmetic Mean",
+                "description": "Sum of a collection of numbers divided by the number of numbers in the collection"
+              },
+              {
+                "name": "Assessment Activity",
+                "description": "Activity involving the evaluation or estimation of the nature, quality, ability, or value of someone or something"
+              },
+              {
+                "name": "Assessment Event",
+                "description": "Event involving the evaluation or estimation of the nature, quality, or ability of someone or something"
+              },
+              {
+                "name": "Assessment Report",
+                "description": "Report that includes an opinion, judgement, appraisal, or view about something and typically the methodology and raw inputs used to arrive at that opinion"
+              },
+              {
+                "name": "Asset",
+                "description": "Something of monetary value that is owned or provides benefit to some party"
+              },
+              {
+                "name": "Asset Class",
+                "description": "Financial instrument classifier for a group of securities that exhibit similar characteristics, behave similarly in the marketplace and are subject to the same laws and regulations"
+              },
+              {
+                "name": "Average Absolute Deviation",
+                "description": "Average of the absolute deviations from a central point"
+              },
+              {
+                "name": "Basket",
+                "description": "Collection of goods, services, or other things (e.g., financial contracts) that can be purchased and sold in some marketplace"
+              },
+              {
+                "name": "Basket Constituent",
+                "description": "Component of a basket"
+              },
+              {
+                "name": "Basket Of Commodities",
+                "description": "Custom basket whose constituents consist of one or more negotiable commodities"
+              },
+              {
+                "name": "Basket Of Debt Instruments",
+                "description": "Basket of securities whose constituents are debt instruments"
+              },
+              {
+                "name": "Basket Of Equities",
+                "description": "Basket of securities whose constituents are listed shares"
+              },
+              {
+                "name": "Basket Of Indices",
+                "description": "Basket composed of market indices"
+              },
+              {
+                "name": "Basket Of Securities",
+                "description": "Basket composed of securities, typically of a particular asset class such as equities or bonds"
+              },
+              {
+                "name": "Composite Index",
+                "description": "A market index that is constructed by combining the components of several other indices"
+              },
+              {
+                "name": "Counterparty Credit Risk",
+                "description": "The risk that a counterparty to a financial transaction will default on its obligations"
+              },
+              {
+                "name": "Custodian",
+                "description": "A financial institution that holds a customer's securities for safekeeping to minimize the risk of theft or loss"
+              },
+              {
+                "name": "Custodian Bank",
+                "description": "A bank specializing in acting as a custodian for investment funds and institutional investors"
+              },
+              {
+                "name": "Custody Agreement",
+                "description": "A legal contract that defines the terms under which a custodian will hold and manage a client's assets"
+              }
+            ]
+          },
+          {
+            "subdomain_name": "Portfolio Planning",
+            "elements": [
+              {
+                "name": "Budget",
+                "description": "Financial plan for a defined period, typically a year, that describes how resources will be allocated and spent"
+              },
+              {
+                "name": "Budgetary Allocation",
+                "description": "Amount of funds assigned to a specific purpose or activity within a budget"
+              },
+              {
+                "name": "Budgetary Component",
+                "description": "A portion or sub-category within a financial budget, used for allocation and tracking"
+              },
+              {
+                "name": "Capital",
+                "description": "Financial assets, funds, or resources available for use in a business or project"
+              },
+              {
+                "name": "Capital Adequacy",
+                "description": "The amount of capital a bank or other financial institution holds relative to its risk-weighted assets to ensure its financial stability"
+              },
+              {
+                "name": "Capital Asset",
+                "description": "An asset with a useful life of more than one year that is not intended for sale in the regular course of the business's operation"
+              },
+              {
+                "name": "Capital Requirement",
+                "description": "The minimum amount of capital that financial institutions are required to hold by regulatory authorities"
+              },
+              {
+                "name": "Concentration Limit",
+                "description": "A constraint imposed on the maximum exposure an entity can have to a single counterparty, industry, or asset class to mitigate risk"
+              },
+              {
+                "name": "Contingency Plan",
+                "description": "A plan designed to take a possible future event or circumstance into account, especially a plan B for a possible disaster"
+              },
+              {
+                "name": "Aligned Community Investment Fund",
+                "description": "Community investment fund that raises capital publicly from community members and deploys some of that capital via investments into its client businesses or other businesses in the community"
+              },
+              {
+                "name": "Close-End Fund",
+                "description": "A type of mutual fund that issues a fixed number of shares via an IPO and then trades them on a stock exchange"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain_name": "Trade Finance",
+        "data_owner": "Alice Johnson",
+        "definition": "Trade Finance covers a broad range of financing, guarantee and transaction processing services. This service domain handles the fulfilment of a flexible line of credit provided to a customer active in import/export business to provide them access to trade-related financing",
+        "subdomains": [
+          {
+            "subdomain_name": "Letter of Credit",
+            "elements": [
+              {
+                "name": "Bill Of Exchange",
+                "description": "Short-term negotiable financial instrument consisting of an order in writing addressed by one person (the seller of goods) to another (the buyer), requiring the latter to pay a fixed amount of money on demand (a sight draft) or on a predetermined date (a time draft)"
+              },
+              {
+                "name": "Commercial Paper",
+                "description": "A short-term, unsecured debt instrument issued by large corporations to raise funds to meet short-term liabilities"
+              },
+              {
+                "name": "Bankers Acceptance",
+                "description": "Short-term debt instrument that is guaranteed and paid by a bank and used as a relatively safe form of payment for large transactions"
+              }
+            ]
+          },
+          {
+            "subdomain_name": "Documentary Collection",
+            "elements": [
+              {
+                "name": "Certificate",
+                "description": "A document attesting to a fact, qualification, or promise"
+              },
+              {
+                "name": "Certified Document",
+                "description": "A copy of a document that is formally guaranteed to be a true and accurate copy of the original"
+              },
+              {
+                "name": "Document",
+                "description": "A written or electronic record that contains official or factual information"
+              },
+              {
+                "name": "Deed",
+                "description": "A legal document that is signed and delivered, especially one regarding the ownership of property or legal rights"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain_name": "Payments",
+        "data_owner": "Robert Lee",
+        "definition": "Initiating, validating and executing payment transactions for both consumers and business customers. This includes domestic and international transfers, single and recurring payments, and orchestration of payment instructions.",
+        "subdomains": [
+          {
+            "subdomain_name": "Payment Execution",
+            "elements": [
+              {
+                "name": "Amount Of Money",
+                "description": "Amount of readily available cash in banknotes and coins"
+              },
+              {
+                "name": "Bank Identifier",
+                "description": "Identifier that uniquely identifies the financial institution and, when appropriate, the branch of that financial institution servicing an account"
+              },
+              {
+                "name": "Book Entry Settlement",
+                "description": "Settlement in which all transactions are processed via electronic book entries rather than the physical exchange of security certificates or other documentation"
+              },
+              {
+                "name": "Cash",
+                "description": "Currency (banknotes and coins) held by an individual or organization, or money available in a bank account"
+              },
+              {
+                "name": "Cash Deposit",
+                "description": "The act of placing cash into a bank account or similar financial holding"
+              },
+              {
+                "name": "Cash Settlement",
+                "description": "The process of settling a financial contract, such as a derivative, with a net cash payment rather than the physical delivery of the underlying asset"
+              },
+              {
+                "name": "Clearing House",
+                "description": "A financial institution that acts as an intermediary and assumes the role of matching and guaranteeing trades between a buyer and a seller"
+              },
+              {
+                "name": "Central Counterparty",
+                "description": "An entity that interposes itself between counterparties to contracts traded in one or more financial markets, becoming the buyer to every seller and the seller to every buyer"
+              },
+              {
+                "name": "Counterparty",
+                "description": "A party involved in a financial transaction"
+              },
+              {
+                "name": "Currency",
+                "description": "A medium of exchange, such as banknotes and coins, typically issued by a government"
+              },
+              {
+                "name": "Currency Exchange Rate",
+                "description": "The rate at which one currency will be exchanged for another"
+              },
+              {
+                "name": "Currency Pair",
+                "description": "A quotation of the exchange rate for two different currencies, such as EUR/USD"
+              }
+            ]
+          },
+          {
+            "subdomain_name": "Payment Reconciliation",
+            "elements": [
+              {
+                "name": "Accounting Framework",
+                "description": "Framework, including policies, methods, rules, and processes, used to measure, recognize, present, and disclose the information appearing in an entity's financial statements"
+              },
+              {
+                "name": "Accounting Transaction",
+                "description": "Event recognized by an entry in the records of an account"
+              },
+              {
+                "name": "Bilateral Netting Provision",
+                "description": "Netting provision that occurs between two parties, in which mutual obligations are offset to determine a single net payment"
+              },
+              {
+                "name": "Close-Out Netting",
+                "description": "A provision in a master agreement that requires all obligations between two parties to be netted to a single, final payment upon a default or termination event"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain_name": "Product Management",
+        "data_owner": "Robinson Wilson",
+        "definition": "Product Design, Product Inventory",
+        "subdomains": [
+          {
+            "subdomain_name": "Product Design",
+            "elements": [
+              {
+                "name": "Banking Product",
+                "description": "Product provided to consumers and businesses by a depository institution"
+              },
+              {
+                "name": "Banking Service",
+                "description": "Financial service offered by a depository institution"
+              },
+              {
+                "name": "Basket Certificate",
+                "description": "Certificate whose underlying asset represents a fraction of a basket of securities that corresponds to the subscription ratio"
+              },
+              {
+                "name": "Bond",
+                "description": "Tradable debt instrument representing a loan in which the issuer owes the holder(s) a debt"
+              },
+              {
+                "name": "Bond Amortization Payment Terms",
+                "description": "Terms that include a schedule for repayment of the principal over the lifetime of the bond, typically in equal payments at regular intervals"
+              },
+              {
+                "name": "Bond Conversion Terms",
+                "description": "Terms indicating when a convertible bond can be converted to another security (usually a publicly traded share issued by of the same issuer)"
+              },
+              {
+                "name": "Bond Coupon",
+                "description": "Interest rate on a debt security that the issuer promises to pay to the holder until maturity, expressed as an annual percentage of the face value"
+              },
+              {
+                "name": "Bond Principal Repayment Terms",
+                "description": "Terms for the repayment of the principal on a bond"
+              },
+              {
+                "name": "Bond Variable Coupon",
+                "description": "Bond coupon that has a variable interest rate"
+              },
+              {
+                "name": "Callable Bond",
+                "description": "A bond that the issuer may redeem before its stated maturity date"
+              },
+              {
+                "name": "Capital Instrument",
+                "description": "A financial security issued by a company to raise capital, such as common stock, preferred stock, or bonds"
+              },
+              {
+                "name": "Certificate Of Deposit",
+                "description": "A time deposit that earns a specified interest rate over a fixed period and is typically issued by a bank"
+              },
+              {
+                "name": "Common Stock",
+                "description": "A security that represents ownership in a corporation; holders typically have voting rights and are entitled to a share of the company's profits"
+              },
+              {
+                "name": "Convertible Bond",
+                "description": "A bond that can be converted into a predetermined amount of the issuer's common stock at the holder's option"
+              },
+              {
+                "name": "Convertible Preferred Stock",
+                "description": "Preferred stock that includes an option for the holder to convert it into a fixed number of common shares"
+              },
+              {
+                "name": "Adjustable Rate Dividend",
+                "description": "Dividend that varies with a benchmark"
+              },
+              {
+                "name": "Amortizing Bond",
+                "description": "Bond that regularly pays down the principal (face value) on the debt along with its interest expense over the life of the bond"
+              },
+              {
+                "name": "Barrier Capital Protection Certificate",
+                "description": "Capital-protected product whose protection is defined as a percentage of the nominal price (e.g. 100 percent), with minimum redemption at expiry equivalent to the capital protection"
+              },
+              {
+                "name": "Capital Protection Certificate",
+                "description": "An investment product designed to provide a guaranteed return of the principal amount invested (or a large percentage of it) at maturity"
+              }
+            ]
+          },
+          {
+            "subdomain_name": "Product Inventory",
+            "elements": [
+              {
+                "name": "Asset Backed Security",
+                "description": "Debt instrument backed by receivables other than those arising out of real estate loans or mortgages"
+              },
+              {
+                "name": "Basket Future",
+                "description": "Futures contract whose underlying asset is a basket of securities and/or indices"
+              },
+              {
+                "name": "Basket Option",
+                "description": "Option whose underlying asset is a group, or basket, of commodities, securities, indices, or currencies"
+              },
+              {
+                "name": "Basket Warrant",
+                "description": "Warrant that permits the holder to acquire a package or group of assets at a specified price during a specified period"
+              },
+              {
+                "name": "Bond Future",
+                "description": "Futures contract whose underlying asset is at least one bond"
+              },
+              {
+                "name": "Bond Option",
+                "description": "Option giving the buyer (holder) the right, but not the obligation, to buy or sell (depending on whether it is a call or a put) a bond at a certain price on or before a specified date"
+              },
+              {
+                "name": "Bond Pool",
+                "description": "Debt pool of consisting of bonds"
+              },
+              {
+                "name": "Call Option",
+                "description": "An option contract that gives the holder the right, but not the obligation, to buy an underlying asset at a specified price (strike price) on or before a specified date (expiration date)"
+              },
+              {
+                "name": "Collateralized Debt Obligation",
+                "description": "A complex structured finance product backed by a pool of assets, such as loans, bonds, or other debt instruments"
+              },
+              {
+                "name": "Collateralized Loan Obligation",
+                "description": "A type of CDO that is backed by a pool of corporate loans"
+              },
+              {
+                "name": "Commodity Futures Contract",
+                "description": "A futures contract where the underlying asset is a physical commodity"
+              },
+              {
+                "name": "Commodity Option",
+                "description": "An option contract where the underlying asset is a commodity or a commodity future"
+              },
+              {
+                "name": "Corporate Bond",
+                "description": "A debt security issued by a corporation to raise capital"
+              },
+              {
+                "name": "Credit Default Swap",
+                "description": "A financial derivative that allows one party to swap the credit risk of a reference entity with another party"
+              },
+              {
+                "name": "Currency Swap",
+                "description": "A swap in which the two parties exchange principal and interest payments in different currencies"
+              },
+              {
+                "name": "Debt Instrument",
+                "description": "A financial security representing a loan that an issuer must repay to the holder"
+              },
+              {
+                "name": "Debt Security",
+                "description": "A fungible, negotiable financial instrument representing a debt"
+              },
+              {
+                "name": "Derivative",
+                "description": "A financial instrument whose value is derived from an underlying asset, rate, or index"
+              },
+              {
+                "name": "Derivative Contract",
+                "description": "A legal agreement that defines the terms of a derivative transaction"
+              },
+              {
+                "name": "American Depositary Receipt

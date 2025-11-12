@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ER Diagram - Jane Doe Banking Domains</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .info-card {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .info-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .diagram-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow-x: auto;
+        }
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .legend-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .legend-item h4 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        .legend-item p {
+            margin: 5px 0;
+            color: #555;
+            font-size: 0.9em;
+        }
+        .tab-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            background: #f8f9fa;
+            border: none;
+            border-radius: 8px 8px 0 0;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        .tab:hover {
+            background: #e9ecef;
+        }
+        .tab.active {
+            background: #667eea;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entity Relationship Data Model</h1>
+        <p class="subtitle">Banking Domains - Data Owner: Jane Doe</p>
+        
+        <div class="info-card">
+            <h3>📊 Data Owner Information</h3>
+            <p><strong>Name:</strong> Jane Doe</p>
+            <p><strong>Domains:</strong> Account Management, Customer Relationship Management</p>
+            <p><strong>Total Entities:</strong> 38 core entities across 3 subdomains</p>
+        </div>
+
+        <div class="tab-container">
+            <button class="tab active" onclick="showTab('overview')">Overview Diagram</button>
+            <button class="tab" onclick="showTab('account')">Account Management</button>
+            <button class="tab" onclick="showTab('customer')">Customer Relationship</button>
+        </div>
+
+        <div id="overview" class="tab-content active">
+            <div class="diagram-container">
+                <div class="mermaid">
+erDiagram
+    DATA_OWNER ||--o{ SERVICE_DOMAIN : owns
+    SERVICE_DOMAIN ||--o{ SUBDOMAIN : contains
+    SUBDOMAIN ||--o{ ENTITY : includes
+    
+    DATA_OWNER {
+        string name "Jane Doe"
+        string role "Data Steward"
+    }
+    
+    SERVICE_DOMAIN {
+        string domain_name
+        string definition
+        string data_owner
+    }
+    
+    SUBDOMAIN {
+        string subdomain_name
+        string parent_domain
+    }
+    
+    ENTITY {
+        string entity_name
+        string description
+        string subdomain
+    }
+    
+    ACCOUNT_MANAGEMENT ||--o{ ACCOUNT_MAINTENANCE : contains
+    ACCOUNT_MANAGEMENT ||--o{ ACCOUNT_CLOSURE : contains
+    
+    CUSTOMER_RELATIONSHIP_MGMT ||--o{ CUSTOMER_PROFILE : contains
+    CUSTOMER_RELATIONSHIP_MGMT ||--o{ CUSTOMER_INTERACTION : contains
+    
+    ACCOUNT_MAINTENANCE {
+        entity Account
+        entity Account_Identifier
+        entity Account_Statement
+        entity Balance
+    }
+    
+    CUSTOMER_PROFILE {
+        entity Customer
+        entity Client
+        entity Beneficiary
+        entity Birth_Certificate
+    }
+    
+    CUSTOMER_INTERACTION {
+        entity Address
+        entity Contact_Information
+        entity Communication_Channel
+        entity Complaint
+    }
+                </div>
+            </div>
+        </div>
+
+        <div id="account" class="tab-content">
+            <div class="diagram-container">
+                <div class="mermaid">
+erDiagram
+    ACCOUNT ||--o{ ACCOUNT_STATEMENT : generates
+    ACCOUNT ||--o{ ACCOUNTING_TRANSACTION : records
+    ACCOUNT ||--|{ ACCOUNT_IDENTIFIER : identified_by
+    ACCOUNT ||--|| ACCOUNT_HOLDER : owned_by
+    ACCOUNT ||--|| ACCOUNT_PROVIDER : serviced_by
+    ACCOUNT ||--o| ACCOUNT_SPECIFIC_SERVICE_AGREEMENT : governed_by
+    ACCOUNT ||--|| BALANCE : has
+    ACCOUNT }o--|| ACCOUNT_OWNERSHIP : involves
+    
+    ACCOUNT {
+        string account_id PK
+        string account_type
+        date opening_date
+        string status
+        string currency
+    }
+    
+    ACCOUNT_HOLDER {
+        string holder_id PK
+        string holder_type
+        string name
+    }
+    
+    ACCOUNT_PROVIDER {
+        string provider_id PK
+        string institution_name
+        string license_number
+    }
+    
+    ACCOUNT_IDENTIFIER {
+        string identifier_value PK
+        string identifier_type
+        string scheme
+    }
+    
+    BANK_ACCOUNT_IDENTIFIER {
+        string bank_account_id PK
+        string routing_number
+        string account_number
+    }
+    
+    BASIC_BANK_ACCOUNT_IDENTIFIER {
+        string iban PK
+        string swift_code
+        string country_code
+    }
+    
+    ACCOUNT_STATEMENT {
+        string statement_id PK
+        date statement_date
+        date period_start
+        date period_end
+        decimal opening_balance
+        decimal closing_balance
+    }
+    
+    ACCOUNTING_TRANSACTION {
+        string transaction_id PK
+        datetime transaction_datetime
+        string transaction_type
+        decimal amount
+        string description
+    }
+    
+    BALANCE {
+        string balance_id PK
+        decimal available_balance
+        decimal ledger_balance
+        datetime last_updated
+    }
+    
+    ACCOUNT_SPECIFIC_SERVICE_AGREEMENT {
+        string agreement_id PK
+        date effective_date
+        date expiry_date
+        string terms
+    }
+    
+    ACCOUNT_OWNERSHIP {
+        string ownership_id PK
+        string ownership_type
+        decimal ownership_percentage
+        date start_date
+    }
+    
+    CASH_ACCOUNT {
+        string cash_account_id PK
+        string settlement_type
+        boolean margin_enabled
+    }
+    
+    DEMAND_DEPOSIT {
+        string demand_deposit_id PK
+        boolean overdraft_protection
+        decimal overdraft_limit
+    }
+    
+    DEPOSIT_ACCOUNT {
+        string deposit_account_id PK
+        decimal interest_rate
+        string deposit_type
+    }
+    
+    CLIENT_ACCOUNT {
+        string client_account_id PK
+        string client_id
+        string custody_type
+    }
+    
+    ACCOUNT_AS_AN_ASSET {
+        string asset_id PK
+        decimal fair_value
+        date valuation_date
+    }
+    
+    ACCOUNT_CHANGE_NOTIFICATION_OBLIGATION {
+        string obligation_id PK
+        string notification_type
+        integer notification_days
+        string recipient
+    }
+    
+    BANK_ACCOUNT_IDENTIFIER ||--|| ACCOUNT : identifies
+    BASIC_BANK_ACCOUNT_IDENTIFIER ||--|| ACCOUNT : identifies
+    CASH_ACCOUNT ||--|| ACCOUNT : is_a
+    DEMAND_DEPOSIT ||--|| ACCOUNT : is_a
+    DEPOSIT_ACCOUNT ||--|| ACCOUNT : is_a
+    CLIENT_ACCOUNT ||--|| ACCOUNT : is_a
+    ACCOUNT_AS_AN_ASSET ||--|| ACCOUNT : represents
+                </div>
+            </div>
+        </div>
+
+        <div id="customer" class="tab-content">
+            <div class="diagram-container">
+                <div class="mermaid">
+erDiagram
+    CUSTOMER ||--o{ CLIENT : can_be
+    CUSTOMER ||--|| CUSTOMER_PROFILE : has
+    CUSTOMER ||--o{ CUSTOMER_INTERACTION : participates_in
+    CUSTOMER ||--o{ ADDRESS : has
+    CUSTOMER ||--|| CONTACT_INFORMATION : has
+    CUSTOMER ||--o{ BUSINESS_ENTITY : can_be
+    
+    CUSTOMER {
+        string customer_id PK
+        string customer_type
+        date onboarding_date
+        string status
+    }
+    
+    CLIENT {
+        string client_id PK
+        string client_type
+        string relationship_manager
+    }
+    
+    CONSUMER {
+        string consumer_id PK
+        string preference_type
+        boolean marketing_consent
+    }
+    
+    CUSTOMER_PROFILE {
+        string profile_id PK
+        date profile_created
+        date last_updated
+    }
+    
+    ADULT {
+        string adult_id PK
+        date date_of_birth
+        string citizenship
+        integer age
+    }
+    
+    CHILD {
+        string child_id PK
+        date date_of_birth
+        string guardian_id
+    }
+    
+    DEPENDENT_CHILD {
+        string dependent_id PK
+        string parent_id
+        string dependency_type
+    }
+    
+    AGE {
+        integer years
+        integer months
+        integer days
+    }
+    
+    AGE_OF_MAJORITY {
+        integer majority_age
+        string jurisdiction
+        string legal_rights
+    }
+    
+    BENEFICIAL_OWNER {
+        string owner_id PK
+        decimal ownership_percentage
+        string ownership_type
+        date effective_date
+    }
+    
+    BENEFICIARY {
+        string beneficiary_id PK
+        string beneficiary_type
+        decimal benefit_percentage
+    }
+    
+    AUTHORIZED_PARTY {
+        string party_id PK
+        string authorization_type
+        date authorization_date
+        date expiry_date
+    }
+    
+    CITIZENSHIP {
+        string citizenship_id PK
+        string country_code
+        date acquisition_date
+        string citizenship_type
+    }
+    
+    DATE_OF_BIRTH {
+        date birth_date PK
+        string birth_place
+        string birth_certificate_id
+    }
+    
+    BIRTH_CERTIFICATE {
+        string certificate_id PK
+        date issue_date
+        string issuing_authority
+        string registration_number
+    }
+    
+    BIRTH_CERTIFICATE_IDENTIFIER {
+        string identifier PK
+        string identifier_scheme
+        string country
+    }
+    
+    BIRTH_CERTIFICATE_IDENTIFICATION_SCHEME {
+        string scheme_id PK
+        string scheme_name
+        string authority
+    }
+    
+    BUSINESS_ENTITY {
+        string entity_id PK
+        string legal_name
+        string entity_type
+        date incorporation_date
+    }
+    
+    BUSINESS_IDENTIFIER {
+        string identifier PK
+        string identifier_type
+        string issuing_country
+    }
+    
+    BUSINESS_LEGAL_NAME {
+        string legal_name PK
+        string name_type
+        date registration_date
+    }
+    
+    BUSINESS_ADDRESS {
+        string address_id PK
+        string address_type
+        boolean is_registered_office
+    }
+    
+    ADDRESS {
+        string address_id PK
+        string address_line1
+        string address_line2
+        string city
+        string state
+        string postal_code
+        string country
+    }
+    
+    ADDRESS_COMPONENT {
+        string component_id PK
+        string component_type
+        string component_value
+    }
+    
+    ADDRESSING_SCHEME {
+        string scheme_id PK
+        string scheme_name
+        string country_standard
+    }
+    
+    COMMUNICATION_ADDRESS {
+        string comm_address_id PK
+        string address_type
+        boolean is_primary
+    }
+    
+    CONTACT_INFORMATION {
+        string contact_id PK
+        string phone_number
+        string email
+        string preferred_method
+    }
+    
+    CONTACT_POINT {
+        string contact_point_id PK
+        string contact_type
+        string department
+        string availability
+    }
+    
+    COMMUNICATION_CHANNEL {
+        string channel_id PK
+        string channel_type
+        boolean is_active
+    }
+    
+    COMPLAINT {
+        string complaint_id PK
+        date complaint_date
+        string complaint_type
+        string status
+        string resolution
+    }
+    
+    CONSENT {
+        string consent_id PK
+        string consent_type
+        date consent_date
+        boolean is_active
+    }
+    
+    AGENT_FOR_SERVICE_OF_PROCESS {
+        string agent_id PK
+        string agent_name
+        string jurisdiction
+        date appointment_date
+    }
+    
+    CUSTOMER ||--|| ADULT : can_be
+    CUSTOMER ||--|| CHILD : can_be
+    ADULT ||--|| AGE : has
+    ADULT ||--|| AGE_OF_MAJORITY : subject_to
+    CHILD ||--|| DEPENDENT_CHILD : can_be
+    CUSTOMER ||--|| BENEFICIAL_OWNER : can_be
+    CUSTOMER ||--|| BENEFICIARY : can_be
+    CUSTOMER ||--|| AUTHORIZED_PARTY : can_be
+    CUSTOMER ||--|| CITIZENSHIP : has
+    CUSTOMER ||--|| DATE_OF_BIRTH : has
+    DATE_OF_BIRTH ||--|| BIRTH_CERTIFICATE : documented_by
+    BIRTH_CERTIFICATE ||--|| BIRTH_CERTIFICATE_IDENTIFIER : identified_by
+    BIRTH_CERTIFICATE_IDENTIFIER ||--|| BIRTH_CERTIFICATE_IDENTIFICATION_SCHEME : uses
+    BUSINESS_ENTITY ||--|| BUSINESS_IDENTIFIER : identified_by
+    BUSINESS_ENTITY ||--|| BUSINESS_LEGAL_NAME : has
+    BUSINESS_ENTITY ||--|| BUSINESS_ADDRESS : located_at
+    ADDRESS ||--o{ ADDRESS_COMPONENT : composed_of
+    ADDRESS ||--|| ADDRESSING_SCHEME : follows
+    COMMUNICATION_ADDRESS ||--|| ADDRESS : is_a
+    CUSTOMER ||--o{ CONTACT_POINT : has
+    CUSTOMER ||--o{ COMMUNICATION_CHANNEL : uses
+    CUSTOMER ||--o{ COMPLAINT : files
+    CUSTOMER ||--o{ CONSENT : provides
+    BUSINESS_ENTITY ||--|| AGENT_FOR_SERVICE_OF_PROCESS : appoints
+    CONSUMER ||--|| CUSTOMER : is_a
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <h4>🔑 Relationship Cardinality</h4>
+                <p><strong>||--||</strong> One-to-One</p>
+                <p><strong>||--o{</strong> One-to-Many</p>
+                <p><strong>}o--||</strong> Many-to-One</p>
+                <p><strong>}o--o{</strong> Many-to-Many</p>
+            </div>
+            <div class="legend-item">
+                <h4>📋 Entity Types</h4>
+                <p><strong>Core Entities:</strong> Account, Customer</p>
+                <p><strong>Supporting Entities:</strong> Identifiers, Statements</p>
+                <p><strong>Reference Entities:</strong> Schemes, Classifications</p>
+            </div>
+            <div class="legend-item">
+                <h4>🎯 Key Domains</h4>
+                <p><strong>Account Management:</strong> 18 entities</p>
+                <p><strong>Customer Relationship:</strong> 31 entities</p>
+                <p><strong>Shared:</strong> 3 entities</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                primaryColor: '#667eea',
+                primaryTextColor: '#2c3e50',
+                primaryBorderColor: '#764ba2',
+                lineColor: '#95a5a6',
+                secondaryColor: '#f8f9fa',
+                tertiaryColor: '#e9ecef'
+            }
+        });
+
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

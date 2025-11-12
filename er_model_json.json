@@ -1,0 +1,1748 @@
+{
+  "er_model": {
+    "metadata": {
+      "model_name": "Banking Data Model - Jane Doe Ownership",
+      "data_owner": "Jane Doe",
+      "version": "1.0",
+      "created_date": "2025-11-11",
+      "total_domains": 2,
+      "total_subdomains": 3,
+      "total_entities": 38,
+      "total_relationships": 65
+    },
+    "data_owner": {
+      "name": "Jane Doe",
+      "role": "Data Steward",
+      "domains": [
+        "Account Management",
+        "Customer Relationship Management"
+      ]
+    },
+    "domains": [
+      {
+        "domain_id": "DOM001",
+        "domain_name": "Account Management",
+        "definition": "A collection of service domain responsible for handling various aspects of banking account operations",
+        "data_owner": "Jane Doe",
+        "subdomains": [
+          {
+            "subdomain_id": "SUB001",
+            "subdomain_name": "Account Maintenance",
+            "parent_domain": "Account Management",
+            "entities": [
+              {
+                "entity_id": "ENT040",
+                "entity_name": "Address",
+                "description": "Index to a location to which communications may be delivered",
+                "entity_type": "Core",
+                "attributes": [
+                  {
+                    "attribute_name": "address_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "address_line1",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "address_line2",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "city",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "state",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "postal_code",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "country",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT041",
+                "entity_name": "Address Component",
+                "description": "Aspect of an address",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "component_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "component_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "component_value",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT042",
+                "entity_name": "Addressing Scheme",
+                "description": "System for allocating addresses to objects",
+                "entity_type": "Reference",
+                "attributes": [
+                  {
+                    "attribute_name": "scheme_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "scheme_name",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "country_standard",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT043",
+                "entity_name": "advises",
+                "description": "Provides counsel or guidance to",
+                "entity_type": "Relationship",
+                "attributes": []
+              },
+              {
+                "entity_id": "ENT044",
+                "entity_name": "Communication Address",
+                "description": "An address used for transmitting information, which can be physical (postal) or electronic (email)",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "comm_address_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "address_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "is_primary",
+                    "data_type": "boolean"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT045",
+                "entity_name": "Communication Channel",
+                "description": "The medium or pathway through which information is transmitted from a sender to a receiver",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "channel_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "channel_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "is_active",
+                    "data_type": "boolean"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT046",
+                "entity_name": "Complaint",
+                "description": "A formal statement alleging a grievance or wrong, typically filed with a regulatory body or in a court of law",
+                "entity_type": "Transactional",
+                "attributes": [
+                  {
+                    "attribute_name": "complaint_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "complaint_date",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "complaint_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "status",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "resolution",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT047",
+                "entity_name": "Consent",
+                "description": "A voluntary agreement to a proposition or action",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "consent_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "consent_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "consent_date",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "is_active",
+                    "data_type": "boolean"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT048",
+                "entity_name": "Contact Information",
+                "description": "Data used to communicate with a party, such as a phone number, email address, or postal address",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "contact_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "phone_number",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "email",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "preferred_method",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT049",
+                "entity_name": "Contact Point",
+                "description": "A specific individual or department designated for communication within an organization",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "contact_point_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "contact_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "department",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "availability",
+                    "data_type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "relationship_id": "REL001",
+        "relationship_name": "Account generates Account_Statement",
+        "source_entity": "Account",
+        "target_entity": "Account Statement",
+        "cardinality": "one-to-many",
+        "relationship_type": "generates",
+        "description": "An account generates multiple statements over time"
+      },
+      {
+        "relationship_id": "REL002",
+        "relationship_name": "Account records Accounting_Transaction",
+        "source_entity": "Account",
+        "target_entity": "Accounting Transaction",
+        "cardinality": "one-to-many",
+        "relationship_type": "records",
+        "description": "An account records multiple transactions"
+      },
+      {
+        "relationship_id": "REL003",
+        "relationship_name": "Account identified_by Account_Identifier",
+        "source_entity": "Account",
+        "target_entity": "Account Identifier",
+        "cardinality": "one-to-many",
+        "relationship_type": "identified_by",
+        "description": "An account can have multiple identifiers"
+      },
+      {
+        "relationship_id": "REL004",
+        "relationship_name": "Account owned_by Account_Holder",
+        "source_entity": "Account",
+        "target_entity": "Account Holder",
+        "cardinality": "one-to-one",
+        "relationship_type": "owned_by",
+        "description": "An account is owned by a holder"
+      },
+      {
+        "relationship_id": "REL005",
+        "relationship_name": "Account serviced_by Account_Provider",
+        "source_entity": "Account",
+        "target_entity": "Account Provider",
+        "cardinality": "one-to-one",
+        "relationship_type": "serviced_by",
+        "description": "An account is serviced by a provider"
+      },
+      {
+        "relationship_id": "REL006",
+        "relationship_name": "Account governed_by Service_Agreement",
+        "source_entity": "Account",
+        "target_entity": "Account Specific Service Agreement",
+        "cardinality": "one-to-zero-or-one",
+        "relationship_type": "governed_by",
+        "description": "An account may be governed by a service agreement"
+      },
+      {
+        "relationship_id": "REL007",
+        "relationship_name": "Account has Balance",
+        "source_entity": "Account",
+        "target_entity": "Balance",
+        "cardinality": "one-to-one",
+        "relationship_type": "has",
+        "description": "An account has a balance"
+      },
+      {
+        "relationship_id": "REL008",
+        "relationship_name": "Account involves Account_Ownership",
+        "source_entity": "Account",
+        "target_entity": "Account Ownership",
+        "cardinality": "many-to-one",
+        "relationship_type": "involves",
+        "description": "Multiple accounts can be involved in ownership relationships"
+      },
+      {
+        "relationship_id": "REL009",
+        "relationship_name": "Bank_Account_Identifier identifies Account",
+        "source_entity": "Bank Account Identifier",
+        "target_entity": "Account",
+        "cardinality": "one-to-one",
+        "relationship_type": "identifies",
+        "description": "A bank account identifier uniquely identifies an account"
+      },
+      {
+        "relationship_id": "REL010",
+        "relationship_name": "Basic_Bank_Account_Identifier identifies Account",
+        "source_entity": "Basic Bank Account Identifier",
+        "target_entity": "Account",
+        "cardinality": "one-to-one",
+        "relationship_type": "identifies",
+        "description": "A basic bank account identifier (IBAN) uniquely identifies an account"
+      },
+      {
+        "relationship_id": "REL011",
+        "relationship_name": "Cash_Account is_a Account",
+        "source_entity": "Cash Account",
+        "target_entity": "Account",
+        "cardinality": "one-to-one",
+        "relationship_type": "is_a",
+        "description": "Cash account is a subtype of account"
+      },
+      {
+        "relationship_id": "REL012",
+        "relationship_name": "Demand_Deposit is_a Account",
+        "source_entity": "Demand Deposit",
+        "target_entity": "Account",
+        "cardinality": "one-to-one",
+        "relationship_type": "is_a",
+        "description": "Demand deposit is a subtype of account"
+      },
+      {
+        "relationship_id": "REL013",
+        "relationship_name": "Deposit_Account is_a Account",
+        "source_entity": "Deposit Account",
+        "target_entity": "Account",
+        "cardinality": "one-to-one",
+        "relationship_type": "is_a",
+        "description": "Deposit account is a subtype of account"
+      },
+      {
+        "relationship_id": "REL014",
+        "relationship_name": "Client_Account is_a Account",
+        "source_entity": "Client Account",
+        "target_entity": "Account",
+        "cardinality": "one-to-one",
+        "relationship_type": "is_a",
+        "description": "Client account is a subtype of account"
+      },
+      {
+        "relationship_id": "REL015",
+        "relationship_name": "Account_As_An_Asset represents Account",
+        "source_entity": "Account As An Asset",
+        "target_entity": "Account",
+        "cardinality": "one-to-one",
+        "relationship_type": "represents",
+        "description": "An asset representation of an account"
+      },
+      {
+        "relationship_id": "REL016",
+        "relationship_name": "Customer can_be Client",
+        "source_entity": "Customer",
+        "target_entity": "Client",
+        "cardinality": "one-to-many",
+        "relationship_type": "can_be",
+        "description": "A customer can be a client"
+      },
+      {
+        "relationship_id": "REL017",
+        "relationship_name": "Customer has Customer_Profile",
+        "source_entity": "Customer",
+        "target_entity": "Customer Profile",
+        "cardinality": "one-to-one",
+        "relationship_type": "has",
+        "description": "A customer has a profile"
+      },
+      {
+        "relationship_id": "REL018",
+        "relationship_name": "Customer participates_in Customer_Interaction",
+        "source_entity": "Customer",
+        "target_entity": "Customer Interaction",
+        "cardinality": "one-to-many",
+        "relationship_type": "participates_in",
+        "description": "A customer participates in interactions"
+      },
+      {
+        "relationship_id": "REL019",
+        "relationship_name": "Customer has Address",
+        "source_entity": "Customer",
+        "target_entity": "Address",
+        "cardinality": "one-to-many",
+        "relationship_type": "has",
+        "description": "A customer can have multiple addresses"
+      },
+      {
+        "relationship_id": "REL020",
+        "relationship_name": "Customer has Contact_Information",
+        "source_entity": "Customer",
+        "target_entity": "Contact Information",
+        "cardinality": "one-to-one",
+        "relationship_type": "has",
+        "description": "A customer has contact information"
+      },
+      {
+        "relationship_id": "REL021",
+        "relationship_name": "Customer can_be Business_Entity",
+        "source_entity": "Customer",
+        "target_entity": "Business Entity",
+        "cardinality": "one-to-many",
+        "relationship_type": "can_be",
+        "description": "A customer can be a business entity"
+      },
+      {
+        "relationship_id": "REL022",
+        "relationship_name": "Customer can_be Adult",
+        "source_entity": "Customer",
+        "target_entity": "Adult",
+        "cardinality": "one-to-one",
+        "relationship_type": "can_be",
+        "description": "A customer can be an adult"
+      },
+      {
+        "relationship_id": "REL023",
+        "relationship_name": "Customer can_be Child",
+        "source_entity": "Customer",
+        "target_entity": "Child",
+        "cardinality": "one-to-one",
+        "relationship_type": "can_be",
+        "description": "A customer can be a child"
+      },
+      {
+        "relationship_id": "REL024",
+        "relationship_name": "Adult has Age",
+        "source_entity": "Adult",
+        "target_entity": "Age",
+        "cardinality": "one-to-one",
+        "relationship_type": "has",
+        "description": "An adult has an age"
+      },
+      {
+        "relationship_id": "REL025",
+        "relationship_name": "Adult subject_to Age_Of_Majority",
+        "source_entity": "Adult",
+        "target_entity": "Age Of Majority",
+        "cardinality": "one-to-one",
+        "relationship_type": "subject_to",
+        "description": "An adult is subject to age of majority rules"
+      },
+      {
+        "relationship_id": "REL026",
+        "relationship_name": "Child can_be Dependent_Child",
+        "source_entity": "Child",
+        "target_entity": "Dependent Child",
+        "cardinality": "one-to-one",
+        "relationship_type": "can_be",
+        "description": "A child can be a dependent child"
+      },
+      {
+        "relationship_id": "REL027",
+        "relationship_name": "Customer can_be Beneficial_Owner",
+        "source_entity": "Customer",
+        "target_entity": "Beneficial Owner",
+        "cardinality": "one-to-one",
+        "relationship_type": "can_be",
+        "description": "A customer can be a beneficial owner"
+      },
+      {
+        "relationship_id": "REL028",
+        "relationship_name": "Customer can_be Beneficiary",
+        "source_entity": "Customer",
+        "target_entity": "Beneficiary",
+        "cardinality": "one-to-one",
+        "relationship_type": "can_be",
+        "description": "A customer can be a beneficiary"
+      },
+      {
+        "relationship_id": "REL029",
+        "relationship_name": "Customer can_be Authorized_Party",
+        "source_entity": "Customer",
+        "target_entity": "Authorized Party",
+        "cardinality": "one-to-one",
+        "relationship_type": "can_be",
+        "description": "A customer can be an authorized party"
+      },
+      {
+        "relationship_id": "REL030",
+        "relationship_name": "Customer has Citizenship",
+        "source_entity": "Customer",
+        "target_entity": "Citizenship",
+        "cardinality": "one-to-one",
+        "relationship_type": "has",
+        "description": "A customer has citizenship"
+      },
+      {
+        "relationship_id": "REL031",
+        "relationship_name": "Customer has Date_Of_Birth",
+        "source_entity": "Customer",
+        "target_entity": "Date Of Birth",
+        "cardinality": "one-to-one",
+        "relationship_type": "has",
+        "description": "A customer has a date of birth"
+      },
+      {
+        "relationship_id": "REL032",
+        "relationship_name": "Date_Of_Birth documented_by Birth_Certificate",
+        "source_entity": "Date Of Birth",
+        "target_entity": "Birth Certificate",
+        "cardinality": "one-to-one",
+        "relationship_type": "documented_by",
+        "description": "A date of birth is documented by a birth certificate"
+      },
+      {
+        "relationship_id": "REL033",
+        "relationship_name": "Birth_Certificate identified_by Birth_Certificate_Identifier",
+        "source_entity": "Birth Certificate",
+        "target_entity": "Birth Certificate Identifier",
+        "cardinality": "one-to-one",
+        "relationship_type": "identified_by",
+        "description": "A birth certificate is identified by an identifier"
+      },
+      {
+        "relationship_id": "REL034",
+        "relationship_name": "Birth_Certificate_Identifier uses Identification_Scheme",
+        "source_entity": "Birth Certificate Identifier",
+        "target_entity": "Birth Certificate Identification Scheme",
+        "cardinality": "one-to-one",
+        "relationship_type": "uses",
+        "description": "A birth certificate identifier uses an identification scheme"
+      },
+      {
+        "relationship_id": "REL035",
+        "relationship_name": "Business_Entity identified_by Business_Identifier",
+        "source_entity": "Business Entity",
+        "target_entity": "Business Identifier",
+        "cardinality": "one-to-one",
+        "relationship_type": "identified_by",
+        "description": "A business entity is identified by a business identifier"
+      },
+      {
+        "relationship_id": "REL036",
+        "relationship_name": "Business_Entity has Business_Legal_Name",
+        "source_entity": "Business Entity",
+        "target_entity": "Business Legal Name",
+        "cardinality": "one-to-one",
+        "relationship_type": "has",
+        "description": "A business entity has a legal name"
+      },
+      {
+        "relationship_id": "REL037",
+        "relationship_name": "Business_Entity located_at Business_Address",
+        "source_entity": "Business Entity",
+        "target_entity": "Business Address",
+        "cardinality": "one-to-one",
+        "relationship_type": "located_at",
+        "description": "A business entity is located at an address"
+      },
+      {
+        "relationship_id": "REL038",
+        "relationship_name": "Address composed_of Address_Component",
+        "source_entity": "Address",
+        "target_entity": "Address Component",
+        "cardinality": "one-to-many",
+        "relationship_type": "composed_of",
+        "description": "An address is composed of multiple components"
+      },
+      {
+        "relationship_id": "REL039",
+        "relationship_name": "Address follows Addressing_Scheme",
+        "source_entity": "Address",
+        "target_entity": "Addressing Scheme",
+        "cardinality": "one-to-one",
+        "relationship_type": "follows",
+        "description": "An address follows an addressing scheme"
+      },
+      {
+        "relationship_id": "REL040",
+        "relationship_name": "Communication_Address is_a Address",
+        "source_entity": "Communication Address",
+        "target_entity": "Address",
+        "cardinality": "one-to-one",
+        "relationship_type": "is_a",
+        "description": "A communication address is a subtype of address"
+      },
+      {
+        "relationship_id": "REL041",
+        "relationship_name": "Customer has Contact_Point",
+        "source_entity": "Customer",
+        "target_entity": "Contact Point",
+        "cardinality": "one-to-many",
+        "relationship_type": "has",
+        "description": "A customer can have multiple contact points"
+      },
+      {
+        "relationship_id": "REL042",
+        "relationship_name": "Customer uses Communication_Channel",
+        "source_entity": "Customer",
+        "target_entity": "Communication Channel",
+        "cardinality": "one-to-many",
+        "relationship_type": "uses",
+        "description": "A customer uses multiple communication channels"
+      },
+      {
+        "relationship_id": "REL043",
+        "relationship_name": "Customer files Complaint",
+        "source_entity": "Customer",
+        "target_entity": "Complaint",
+        "cardinality": "one-to-many",
+        "relationship_type": "files",
+        "description": "A customer can file multiple complaints"
+      },
+      {
+        "relationship_id": "REL044",
+        "relationship_name": "Customer provides Consent",
+        "source_entity": "Customer",
+        "target_entity": "Consent",
+        "cardinality": "one-to-many",
+        "relationship_type": "provides",
+        "description": "A customer provides consent for various purposes"
+      },
+      {
+        "relationship_id": "REL045",
+        "relationship_name": "Business_Entity appoints Agent_For_Service",
+        "source_entity": "Business Entity",
+        "target_entity": "Agent For Service Of Process",
+        "cardinality": "one-to-one",
+        "relationship_type": "appoints",
+        "description": "A business entity appoints an agent for service of process"
+      },
+      {
+        "relationship_id": "REL046",
+        "relationship_name": "Consumer is_a Customer",
+        "source_entity": "Consumer",
+        "target_entity": "Customer",
+        "cardinality": "one-to-one",
+        "relationship_type": "is_a",
+        "description": "A consumer is a subtype of customer"
+      }
+    ],
+    "domain_integration_points": [
+      {
+        "integration_id": "INT001",
+        "integration_name": "Customer-Account Linkage",
+        "description": "Customers are linked to accounts through Account Holder relationship",
+        "source_domain": "Customer Relationship Management",
+        "target_domain": "Account Management",
+        "key_entities": ["Customer", "Account Holder", "Account"]
+      },
+      {
+        "integration_id": "INT002",
+        "integration_name": "Business Entity Account Ownership",
+        "description": "Business entities can own accounts and have beneficial owners",
+        "source_domain": "Customer Relationship Management",
+        "target_domain": "Account Management",
+        "key_entities": ["Business Entity", "Beneficial Owner", "Account Ownership"]
+      },
+      {
+        "integration_id": "INT003",
+        "integration_name": "Client Service Agreements",
+        "description": "Clients have account-specific service agreements",
+        "source_domain": "Customer Relationship Management",
+        "target_domain": "Account Management",
+        "key_entities": ["Client", "Account Specific Service Agreement", "Client Account"]
+      }
+    ],
+    "data_quality_rules": [
+      {
+        "rule_id": "DQ001",
+        "rule_name": "Account Identifier Uniqueness",
+        "entity": "Account Identifier",
+        "rule_type": "Uniqueness",
+        "description": "Each account identifier must be unique within the system",
+        "criticality": "High"
+      },
+      {
+        "rule_id": "DQ002",
+        "rule_name": "Customer Date of Birth Validity",
+        "entity": "Date Of Birth",
+        "rule_type": "Validity",
+        "description": "Date of birth must be a valid past date",
+        "criticality": "High"
+      },
+      {
+        "rule_id": "DQ003",
+        "rule_name": "Account Balance Consistency",
+        "entity": "Balance",
+        "rule_type": "Consistency",
+        "description": "Account balance must match sum of transactions",
+        "criticality": "Critical"
+      },
+      {
+        "rule_id": "DQ004",
+        "rule_name": "Contact Information Completeness",
+        "entity": "Contact Information",
+        "rule_type": "Completeness",
+        "description": "At least one contact method (phone or email) must be provided",
+        "criticality": "Medium"
+      },
+      {
+        "rule_id": "DQ005",
+        "rule_name": "Address Validity",
+        "entity": "Address",
+        "rule_type": "Validity",
+        "description": "Address must conform to addressing scheme standards",
+        "criticality": "Medium"
+      }
+    ],
+    "security_classifications": [
+      {
+        "classification_id": "SEC001",
+        "entity_name": "Account",
+        "data_sensitivity": "High",
+        "pii_indicator": false,
+        "encryption_required": true,
+        "access_level": "Restricted"
+      },
+      {
+        "classification_id": "SEC002",
+        "entity_name": "Customer",
+        "data_sensitivity": "High",
+        "pii_indicator": true,
+        "encryption_required": true,
+        "access_level": "Restricted"
+      },
+      {
+        "classification_id": "SEC003",
+        "entity_name": "Date Of Birth",
+        "data_sensitivity": "High",
+        "pii_indicator": true,
+        "encryption_required": true,
+        "access_level": "Restricted"
+      },
+      {
+        "classification_id": "SEC004",
+        "entity_name": "Contact Information",
+        "data_sensitivity": "Medium",
+        "pii_indicator": true,
+        "encryption_required": true,
+        "access_level": "Confidential"
+      },
+      {
+        "classification_id": "SEC005",
+        "entity_name": "Address",
+        "data_sensitivity": "Medium",
+        "pii_indicator": true,
+        "encryption_required": true,
+        "access_level": "Confidential"
+      },
+      {
+        "classification_id": "SEC006",
+        "entity_name": "Account Balance",
+        "data_sensitivity": "High",
+        "pii_indicator": false,
+        "encryption_required": true,
+        "access_level": "Restricted"
+      }
+    ],
+    "compliance_mappings": [
+      {
+        "mapping_id": "COMP001",
+        "regulation": "GDPR",
+        "article": "Article 6 - Lawfulness of Processing",
+        "affected_entities": ["Customer", "Contact Information", "Address", "Date Of Birth"],
+        "compliance_requirement": "Consent required for processing personal data"
+      },
+      {
+        "mapping_id": "COMP002",
+        "regulation": "GDPR",
+        "article": "Article 17 - Right to Erasure",
+        "affected_entities": ["Customer", "Account", "Contact Information"],
+        "compliance_requirement": "Ability to delete customer data upon request"
+      },
+      {
+        "mapping_id": "COMP003",
+        "regulation": "KYC/AML",
+        "article": "Customer Due Diligence",
+        "affected_entities": ["Customer", "Beneficial Owner", "Business Entity"],
+        "compliance_requirement": "Verify customer identity and beneficial ownership"
+      },
+      {
+        "mapping_id": "COMP004",
+        "regulation": "SOX",
+        "article": "Section 404 - Internal Controls",
+        "affected_entities": ["Account", "Accounting Transaction", "Balance"],
+        "compliance_requirement": "Maintain accurate financial records and controls"
+      }
+    ]
+  }
+}
+                "entity_id": "ENT001",
+                "entity_name": "Account",
+                "description": "Container for records associated with a business arrangement for regular transactions and services",
+                "entity_type": "Core",
+                "attributes": [
+                  {
+                    "attribute_name": "account_id",
+                    "data_type": "string",
+                    "is_primary_key": true,
+                    "is_nullable": false
+                  },
+                  {
+                    "attribute_name": "account_type",
+                    "data_type": "string",
+                    "is_nullable": false
+                  },
+                  {
+                    "attribute_name": "opening_date",
+                    "data_type": "date",
+                    "is_nullable": false
+                  },
+                  {
+                    "attribute_name": "status",
+                    "data_type": "string",
+                    "is_nullable": false
+                  },
+                  {
+                    "attribute_name": "currency",
+                    "data_type": "string",
+                    "is_nullable": false
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT002",
+                "entity_name": "Account As An Asset",
+                "description": "Financial asset in the form of an account",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "asset_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "fair_value",
+                    "data_type": "decimal"
+                  },
+                  {
+                    "attribute_name": "valuation_date",
+                    "data_type": "date"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT003",
+                "entity_name": "Account Holder",
+                "description": "Party that owns an account",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "holder_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "holder_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "name",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT004",
+                "entity_name": "Account Identifier",
+                "description": "Identifier that denotes an account",
+                "entity_type": "Reference",
+                "attributes": [
+                  {
+                    "attribute_name": "identifier_value",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "identifier_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "scheme",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT005",
+                "entity_name": "Account Ownership",
+                "description": "Holding of an account",
+                "entity_type": "Associative",
+                "attributes": [
+                  {
+                    "attribute_name": "ownership_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "ownership_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "ownership_percentage",
+                    "data_type": "decimal"
+                  },
+                  {
+                    "attribute_name": "start_date",
+                    "data_type": "date"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT006",
+                "entity_name": "Account Provider",
+                "description": "Party that provides and services an account",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "provider_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "institution_name",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "license_number",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT007",
+                "entity_name": "Account Specific Service Agreement",
+                "description": "Service-agreement that is account-specific, applicable in cases where a client might hold multiple accounts with differing terms and conditions",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "agreement_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "effective_date",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "expiry_date",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "terms",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT008",
+                "entity_name": "Account Statement",
+                "description": "Periodic summary of account activity for a given period of time",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "statement_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "statement_date",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "period_start",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "period_end",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "opening_balance",
+                    "data_type": "decimal"
+                  },
+                  {
+                    "attribute_name": "closing_balance",
+                    "data_type": "decimal"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT009",
+                "entity_name": "Accounting Transaction",
+                "description": "Event recognized by an entry in the records of an account",
+                "entity_type": "Transactional",
+                "attributes": [
+                  {
+                    "attribute_name": "transaction_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "transaction_datetime",
+                    "data_type": "datetime"
+                  },
+                  {
+                    "attribute_name": "transaction_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "amount",
+                    "data_type": "decimal"
+                  },
+                  {
+                    "attribute_name": "description",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT010",
+                "entity_name": "applies To Account",
+                "description": "Indicates the account to which the transaction record or individual transaction applies",
+                "entity_type": "Relationship",
+                "attributes": []
+              },
+              {
+                "entity_id": "ENT011",
+                "entity_name": "Balance",
+                "description": "Amount of money available or owed",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "balance_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "available_balance",
+                    "data_type": "decimal"
+                  },
+                  {
+                    "attribute_name": "ledger_balance",
+                    "data_type": "decimal"
+                  },
+                  {
+                    "attribute_name": "last_updated",
+                    "data_type": "datetime"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT012",
+                "entity_name": "Bank Account Identifier",
+                "description": "Identifier that identifies a demand deposit account provided by a bank",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "bank_account_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "routing_number",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "account_number",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT013",
+                "entity_name": "Basic Bank Account Identifier",
+                "description": "Identifier that uniquely identifies an individual account at a specific financial institution in a particular country and which includes a bank identifier of the financial institution servicing that account",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "iban",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "swift_code",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "country_code",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT014",
+                "entity_name": "Cash Account",
+                "description": "An investment account where all transactions must be settled with cash in the account, as opposed to a margin account",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "cash_account_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "settlement_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "margin_enabled",
+                    "data_type": "boolean"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT015",
+                "entity_name": "Client Account",
+                "description": "An account held by a service provider on behalf of a client to manage their assets or transactions",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "client_account_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "client_id",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "custody_type",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT016",
+                "entity_name": "Demand Deposit",
+                "description": "A bank account (like a checking account) from which funds can be withdrawn at any time without advance notice",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "demand_deposit_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "overdraft_protection",
+                    "data_type": "boolean"
+                  },
+                  {
+                    "attribute_name": "overdraft_limit",
+                    "data_type": "decimal"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT017",
+                "entity_name": "Deposit Account",
+                "description": "An account held at a financial institution where funds are placed for safekeeping and can be withdrawn under certain conditions",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "deposit_account_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "interest_rate",
+                    "data_type": "decimal"
+                  },
+                  {
+                    "attribute_name": "deposit_type",
+                    "data_type": "string"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subdomain_id": "SUB002",
+            "subdomain_name": "Account Closure",
+            "parent_domain": "Account Management",
+            "entities": [
+              {
+                "entity_id": "ENT018",
+                "entity_name": "Account Change Notification Obligation",
+                "description": "Obligation to notify a counterparty of any changes in account details",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "obligation_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "notification_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "notification_days",
+                    "data_type": "integer"
+                  },
+                  {
+                    "attribute_name": "recipient",
+                    "data_type": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "domain_id": "DOM002",
+        "domain_name": "Customer Relationship Management",
+        "definition": "The domain governs the full lifecycle of customer engagement, including onboarding, relationship development and eventual closure",
+        "data_owner": "Jane Doe",
+        "subdomains": [
+          {
+            "subdomain_id": "SUB003",
+            "subdomain_name": "Customer Profile",
+            "parent_domain": "Customer Relationship Management",
+            "entities": [
+              {
+                "entity_id": "ENT019",
+                "entity_name": "Adult",
+                "description": "Person who has attained the age of majority as defined in some jurisdiction",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "adult_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "date_of_birth",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "citizenship",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "age",
+                    "data_type": "integer"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT020",
+                "entity_name": "Age",
+                "description": "Length of time that something or someone has been alive or existed",
+                "entity_type": "Attribute",
+                "attributes": [
+                  {
+                    "attribute_name": "years",
+                    "data_type": "integer"
+                  },
+                  {
+                    "attribute_name": "months",
+                    "data_type": "integer"
+                  },
+                  {
+                    "attribute_name": "days",
+                    "data_type": "integer"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT021",
+                "entity_name": "Age Of Majority",
+                "description": "Age at which someone acquires the rights and responsibilities of an adult in some jurisdiction",
+                "entity_type": "Reference",
+                "attributes": [
+                  {
+                    "attribute_name": "majority_age",
+                    "data_type": "integer"
+                  },
+                  {
+                    "attribute_name": "jurisdiction",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "legal_rights",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT022",
+                "entity_name": "Agent For Service Of Process",
+                "description": "Registered agent (person or organization) designated by a business entity, such as a corporation, to receive legal correspondence on behalf of the business entity in the jurisdiction in which the agent's address is located",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "agent_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "agent_name",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "jurisdiction",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "appointment_date",
+                    "data_type": "date"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT023",
+                "entity_name": "Authorized Party",
+                "description": "Party that has been given the responsibility to act on behalf of another party under some set of guidelines",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "party_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "authorization_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "authorization_date",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "expiry_date",
+                    "data_type": "date"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT024",
+                "entity_name": "Beneficial Owner",
+                "description": "Party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) may be in the name of another party (called a nominee or registered owner)",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "owner_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "ownership_percentage",
+                    "data_type": "decimal"
+                  },
+                  {
+                    "attribute_name": "ownership_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "effective_date",
+                    "data_type": "date"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT025",
+                "entity_name": "Beneficiary",
+                "description": "Party that receives some benefit or advantage or profits from something",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "beneficiary_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "beneficiary_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "benefit_percentage",
+                    "data_type": "decimal"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT026",
+                "entity_name": "Birth Certificate",
+                "description": "An original document certifying the circumstances of the birth, or a certified copy of or representation of the ensuing registration of that birth",
+                "entity_type": "Reference",
+                "attributes": [
+                  {
+                    "attribute_name": "certificate_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "issue_date",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "issuing_authority",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "registration_number",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT027",
+                "entity_name": "Birth Certificate Identification Scheme",
+                "description": "System for allocating identifiers to birth certificates",
+                "entity_type": "Reference",
+                "attributes": [
+                  {
+                    "attribute_name": "scheme_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "scheme_name",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "authority",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT028",
+                "entity_name": "Birth Certificate Identifier",
+                "description": "Identifier associated with a vital record documenting the birth of a child",
+                "entity_type": "Reference",
+                "attributes": [
+                  {
+                    "attribute_name": "identifier",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "identifier_scheme",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "country",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT029",
+                "entity_name": "Child",
+                "description": "A young human being below the age of full legal responsibility",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "child_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "date_of_birth",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "guardian_id",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT030",
+                "entity_name": "Citizenship",
+                "description": "The status of being a legally recognized member of a country, state, or commonwealth",
+                "entity_type": "Attribute",
+                "attributes": [
+                  {
+                    "attribute_name": "citizenship_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "country_code",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "acquisition_date",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "citizenship_type",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT031",
+                "entity_name": "Client",
+                "description": "A party that purchases goods or services from another party",
+                "entity_type": "Core",
+                "attributes": [
+                  {
+                    "attribute_name": "client_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "client_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "relationship_manager",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT032",
+                "entity_name": "Consumer",
+                "description": "A party that purchases goods and services for personal use rather than for manufacture or resale",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "consumer_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "preference_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "marketing_consent",
+                    "data_type": "boolean"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT033",
+                "entity_name": "Customer",
+                "description": "A party who receives a service or product from a seller or service provider",
+                "entity_type": "Core",
+                "attributes": [
+                  {
+                    "attribute_name": "customer_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "customer_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "onboarding_date",
+                    "data_type": "date"
+                  },
+                  {
+                    "attribute_name": "status",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT034",
+                "entity_name": "Date Of Birth",
+                "description": "The day, month, and year a person was born",
+                "entity_type": "Attribute",
+                "attributes": [
+                  {
+                    "attribute_name": "birth_date",
+                    "data_type": "date",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "birth_place",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "birth_certificate_id",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT035",
+                "entity_name": "Dependent Child",
+                "description": "A child who relies on another person (parent or guardian) for financial support",
+                "entity_type": "Subtype",
+                "attributes": [
+                  {
+                    "attribute_name": "dependent_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "parent_id",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "dependency_type",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT036",
+                "entity_name": "Business Address",
+                "description": "A specific location where a business is conducted or where legal correspondence and official documents can be delivered",
+                "entity_type": "Supporting",
+                "attributes": [
+                  {
+                    "attribute_name": "address_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "address_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "is_registered_office",
+                    "data_type": "boolean"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT037",
+                "entity_name": "Business Entity",
+                "description": "An organization formed to conduct business, engage in commerce, or carry out a mission, whether for-profit or not-for-profit",
+                "entity_type": "Core",
+                "attributes": [
+                  {
+                    "attribute_name": "entity_id",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "legal_name",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "entity_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "incorporation_date",
+                    "data_type": "date"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT038",
+                "entity_name": "Business Identifier",
+                "description": "A unique code or number assigned to a legal entity to identify it in various business or legal contexts",
+                "entity_type": "Reference",
+                "attributes": [
+                  {
+                    "attribute_name": "identifier",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "identifier_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "issuing_country",
+                    "data_type": "string"
+                  }
+                ]
+              },
+              {
+                "entity_id": "ENT039",
+                "entity_name": "Business Legal Name",
+                "description": "The official and registered full name of a business entity",
+                "entity_type": "Attribute",
+                "attributes": [
+                  {
+                    "attribute_name": "legal_name",
+                    "data_type": "string",
+                    "is_primary_key": true
+                  },
+                  {
+                    "attribute_name": "name_type",
+                    "data_type": "string"
+                  },
+                  {
+                    "attribute_name": "registration_date",
+                    "data_type": "date"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subdomain_id": "SUB004",
+            "subdomain_name": "Customer Interaction",
+            "parent_domain": "Customer Relationship Management",
+            "entities": [
+              {

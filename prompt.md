@@ -1,0 +1,3 @@
+create a comprehensive categorization of all the banking elements from File2.csv organized under the service domains , subdomains and Data owner name from File1.csv. Map by analyzing each element's definition and match it to the most appropriate domain based on its functional purpose. provide two output files 1. Markdown format 2. Json format
+
+Now taking the output file of Banking elements categorization , create a Entity Relationship data model for the categorization done under data owner Jane Doe. The output has to be in the form of a ER diagram to view and a JSON output that can be fed into an external system for viewing.

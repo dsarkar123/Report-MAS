@@ -1,0 +1,425 @@
+Name,Comment
+ABAIIN Registry Entry,"An entry in the ABA IIN registry, a repository of financial institution characteristics collected by the ABA for those institutions to which they issue IINS "
+ABAIIN Registry Entry only applies To,"A subtype of associative entity 'applies To' to restrict child entities for the parent, ABAIIN Registry Entry "
+ABARTN Registry Entry,"An entry in the ABA RTN registry, a repository of financial institution characteristics collected by the ABA Registrar on behalf of the ABA "
+ABARTN Registry Entry only applies To,"A subtype of associative entity 'applies To' to restrict child entities for the parent, ABARTN Registry Entry "
+Absolute Prepayment Rate,Measure of the monthly rate of loan prepayments as a percentage of the original pool balance
+Account,Container for records associated with a business arrangement for regular transactions and services
+Account As An Asset,Financial asset in the form of an account
+Account Change Notification Obligation,Obligation to notify a counterparty of any changes in account details
+Account Holder,Party that owns an account
+Account Identifier,Identifier that denotes an account
+Account Ownership,Holding of an account
+Account Provider,Party that provides and services an account
+Account Specific Service Agreement,"Service-agreement that is account-specific, applicable in cases where a client might hold multiple accounts with differing terms and conditions "
+Account Statement,Periodic summary of account activity for a given period of time
+Accounting Framework,"Framework, including policies, methods, rules, and processes, used to measure, recognize, present, and disclose the information appearing in an entity's financial statements, and, from a legal ownership perspective, that is applied for accounting consolidation determination "
+Accounting Transaction,Event recognized by an entry in the records of an account
+Accrual,The process of accumulating interest or other income that has been earned but not paid
+Accrued Interest,"Amount of interest that has been incurred, as of a specific date, on a loan or other financial obligation but has not yet been paid out "
+Action,"Event announced, initiated or carried out by an organization that affects a legal entity or the securities it issues and may have a material impact on that entity's stakeholders, such as shareholders and creditors "
+Action Classification Scheme,"Scheme for classifying the kinds of actions and events that may be announced, initiated or carried out by an organization that affects a legal entity or the securities it issues "
+Action Classification Scheme only has Member (cmns),"A subtype of associative entity 'has Member (cmns)' to restrict child entities for the parent, Action Classification Scheme "
+Action Classifier,"Classifier that distinguishes the kinds of actions and events that may be announced, initiated or carried out by an organization that affects a legal entity or the securities it issues, such as income-oriented events "
+Action Status,State of some action at some point in time
+Actor,"Primary performer in a relationship between parties, i.e., the party that does something, causes something to happen, or otherwise plays an agentive role in the relationship "
+acts In,Indicates a situation in which the actor plays a primary role
+acts On,Relates an actor in a given situation to the undergoer that they affect under the circumstances
+Ad Hoc Schedule,Schedule consisting of some number of individual events that are not necessarily recurring
+Ad Hoc Schedule Entry,"Entry, including a date or date and time, among multiple non-regularly-recurring entries in a schedule "
+Address,Index to a location to which communications may be delivered
+Address Component,Aspect of an address
+Addressing Scheme,System for allocating addresses to objects
+Addressing Scheme only defines,"A subtype of associative entity 'defines' to restrict child entities for the parent, Addressing Scheme "
+Adjustable Rate Dividend,Dividend that varies with a benchmark
+Adjusted Closing Price,"Amended closing price to reflect a security's value after accounting for any corporate actions, such as stock splits, dividends, and rights offerings "
+Administrative Agent,Role of a financial institution (often one of the primary lenders in the syndicate) designated to act as an intermediary between the borrowers and the syndicate lenders
+Adult,Person who has attained the age of majority as defined in some jurisdiction
+advises,Provides counsel or guidance to
+Affiliate,"Party that is related to a legal entity, directly, or indirectly through one or more intermediaries, and controls, or is controlled by, or is under common control with that entity, typically determined by the degree of ownership "
+Affiliation,Situation in which a controlled party is affiliated with a controlling party for some period of time
+Age,Length of time that something or someone has been alive or existed
+Age Of Majority,Age at which someone acquires the rights and responsibilities of an adult in some jurisdiction
+Agency Agreement,Agreement that designates a party as a registered agent to represent and act on behalf of another
+Agency Of A Foreign Banking Organization,"Place of business of a foreign bank, located in any state, at which credit balances are maintained, checks are paid, money is lent, or, to the extent not prohibited by state or federal law, deposits are accepted from a person or entity that is not a citizen or resident of the United States "
+Agent,Something autonomous that can adapt to and interact with its environment
+Agent For Service Of Process,"Registered agent (person or organization) designated by a business entity, such as a corporation, to receive legal correspondence on behalf of the business entity in the jurisdiction in which the agent's address is located "
+Agent Role,Role played by any agent
+Agreement,"Negotiated understanding between two or more parties, reflecting the offer and acceptance of commitments on the part of either party "
+Agreement Corporation,"Corporation chartered by a state to engage in international banking, so named because the corporation enters into an 'agreement' with the Fed's Board of Governors that it will limit its activities to those permitted "
+Agreement Corporation-Banking,Agreement corporation whose charter allows the corporation to engage in international banking
+Agreement Corporation-Investment,Agreement corporation whose charter allows the corporation to engage in international investment banking
+Agricultural Resource,"Negotiable commodity that is obtained via some agricultural process, including forestry, fishing, livestock, grain, dairy, corn, cocoa, soybeans, sugar, coffee "
+Aligned Community Investment Fund,Community investment fund that raises capital publicly from community members and deploys some of that capital via investments into its client businesses or other businesses in the community
+Allotment Right,"Privileges allotted to existing security holders, entitling them to receive new securities free of charge "
+Allotment Right Formula,"Rule applied to calculate the number of securities for an allotment right, typically based on the number of these instruments that the holder holds "
+Alpha2 Code (cr),A digraph representing a country or geographic region
+Alpha2 Code (Ir),"A language identifier for a human language as defined by ISO 639-1, that is, a two-letter combination of characters used to represent a language or languages "
+Alpha3 Code (cr),A trigraph representing a country or geographic region
+Alpha3 Code (Ir),"A language identifier for a human language as defined by ISO 639, that is, a three-letter combination of characters used to represent a language or languages "
+Alternative Trading System,Trading venue that is more loosely regulated than a regulated exchange
+American Depositary Receipt,Depositary receipt that represents securities of a foreign company and allows that company's securities to trade in the U.S. financial markets
+American Depositary Receipt Level,Classifier for American depositary receipts that categorizes ADRs into levels based on the extent to which the foreign company has access to the U.S. market
+American Depositary Receipt Level Scheme,Classifier for American depositary receipts that categorizes ADRs into levels based on the extent to which the foreign company has access to the U.S. market
+American Exercise Terms,Exercise terms that stipulate that an option may be exercised on or before the date of expiration
+American Statistics Publisher,Statistical information publisher comprised of the government agencies and departments that publish statistical information on behalf of the U.S. Federal Government
+Amortization,"The process of reduction of debt or other costs through periodic charges to assets or liabilities, such as through principal payments on mortgages "
+Amortization Schedule,Schedule of periodic payments (repayment installments) that specify changes in the balance of the debt over time
+Amortizing Bond,Bond that regularly pays down the principal (face value) on the debt along with its interest expense over the life of the bond
+Amount Of Money,Amount of readily available cash in banknotes and coins
+Anchor Date,Fixed reference point within a series or timeline
+Ancient Language,An extinct language that has an attested literature and is recognized as having special status in the academic community
+Annualized Standard Deviation,Standard deviation for some measure over a specific reference period
+applies Methodology,Indicates the strategy used for the purposes of determining the fair market or present value of something
+applies To,"Indicates something for which a context is material, germane, or relevant in some way "
+applies To Account,Indicates the account to which the transaction record or individual transaction applies
+Appraisal,"Written estimate of the market value of something as of some point in time, typically provided by a qualified appraiser "
+Appraised Value,Estimated value of some asset as of a given point in time
+Appraiser,"Party that evaluates or estimates the nature, quality, ability, or value of someone or something "
+Approved Publication Arrangement,"Data reporting services provider that is authorized to provide the service of publishing certain trade reports on behalf of banks, investment firms, or asset management companies "
+Approved Reporting Mechanism,Data reporting services provider that is authorized to provide the service of reporting details of transactions to competent authorities or ESMA (the European Securities and Markets Authority) on behalf of investment firms
+Arbitrary Unit,"Arbitrarily defined unit of measurement, where a relation of the unit to a physical unit of the Sl does not exist or is unknown "
+Arithmetic Mean,Sum of a collection of numbers divided by the number of numbers in the collection
+Arrangement (cmns),"Systematic plan, manner, or method for making, doing, achieving, or organizing something "
+Arrangement (Icc),"A structure or means of organizing information such as a schema, numbering system, organization scheme, measurement system, taxonomy, or language for organizing information "
+Articles Of Incorporation,"Contract that establishes a new corporation or, when amended, adjusts the legal basis for the corporation, and outlines basic information about the corporation, including the type of business, and a description of the business' operational characteristics "
+Artificial Language,A language for human communication that has been artificially devised
+Asian Option,Option whose exercise terms involve a payoff determined by the average underlying price (either the strike price or the settlement price) of the underlying asset over a predetermined period
+Asian Option Classifier,Financial instrument classifier that classifies Asian options based on whether they are rate-based or price based
+Aspect,"Characteristic or feature that can be used to dimensionalize, filter, or subset a class, collection, or set of things "
+Assessment Activity,"Activity involving the evaluation or estimation of the nature, quality, ability, or value of someone or something "
+Assessment Boundary,"Defined scope, limits, and criteria used to determine what is included or excluded in an evaluation, analysis, or measurement of environmental impacts, sustainability performance, or related objectives "
+Assessment Event,"Event involving the evaluation or estimation of the nature, quality, or ability of someone or something "
+Assessment Report,"Report that includes an opinion, judgement, appraisal, or view about something and typically the methodology and raw inputs used to arrive at that opinion "
+Asset,Something of monetary value that is owned or provides benefit to some party
+Asset Backed Credit Default Swap,Credit default swap whose underlying reference obligation is an asset-backed security rather than corporate credit
+Asset Backed Security,Debt instrument backed by receivables other than those arising out of real estate loans or mortgages
+Asset Class,"Financial instrument classifier for a group of securities that exhibit similar characteristics, behave similarly in the marketplace and are subject to the same laws and regulations "
+Assignable Contract,Contract in which contract holder (assignor) may transfer some or all of their rights and obligations to another party (assignee)
+Association,Notfor-profit organization that is owned by and acts on behalf of its members
+Attachment Point,"Lower tranche boundary of a tranche defined as a percentage of the value of the total pool of collateral, either at issuance or as of some point in time "
+Auction Date Rule,Business recurrence interval convention that is a published rule for defining the date of some auction event
+Auction Market,"Exchange in which buyers and sellers submit competitive bids that do not involve direct negotiations between parties, as part of an auction scheduled either on demand or on a periodic basis "
+Auction Rate Dividend,"Preferred share dividend whose rate is periodically reset through an auction, typically every 7, 14, 28, or 35 days "
+Auditor,Party qualified and authorized to review and verify the accuracy of financial records and ensure that companies comply with tax laws
+Authorization,Situation in which a party authorizes someone to act on their behalf under certain conditions for some period of time
+Authorized Party,Party that has been given the responsibility to act on behalf of another party under some set of guidelines
+authorizes,"Endorses, enables, ernpowers, or gives permission to "
+authorizes Through,Indicates the situation that facilitates designation of an authorized party by the authorizing party for some purpose
+Authorizing Party,"Party that delegates some role, authority, or control to another party "
+Auto Asset Backed Security,Asset-backed security that is backed by an underlying pool of auto-related loans and/or leases
+Auto Debt Pool,Debt pool of loans and/or leases that are motor vehicle-related
+Automated System,System that reduces or eliminates the need for human involvement in order to complete a task
+Average Absolute Deviation,Average of the absolute deviations from a central point
+Average Daily Earnings,Measure of the average daily wage an employee makes over the reporting period
+Average Earnings,Measure of the average wage an hourly or salaried worker makes in a given period of time
+Average Hourly Earnings,Measure of the average hourly wage an employee makes over the reporting period
+Average Monthly Earnings,Measure of the average monthly wage an employee makes over the reporting period
+Average Weekly Earnings,Measure of the average weekly wage an employee makes over the reporting period
+Averaging Strategy,Method used for calculating the average rate or price of an Asian option
+Balance,Amount of money available or owed
+Bank,"Depository institution, usually a corporation, that accepts deposits, makes loans, pays checks, and performs related services, for individual members of the public, businesses or other organizations "
+Bank Account Identifier,Identifier that identifies a demand deposit account provided by a bank
+Bank Holding Company,Any company that owns and/or has direct or indirect control of one or more banks; BHCs may also own nonbanking subsidiaries such as broker-dealers and asset managers
+Bank Identifier,"Identifier that uniquely identifies the financial institution and, when appropriate, the branch of that financial institution servicing an account "
+Bankers Acceptance,Short-term debt instrument that is guaranteed and paid by a bank and used as a relatively safe form of payment for large transactions
+Bankers Bank,"Commercial bank owned exclusively (except to the extent directors' qualifying shares are required by law) by other depository institutions or depository institution holding companies, the activities of which are limited by its articles of association exclusively to providing services to or for other depository institutions, their holding companies, and the officers, directors, and employees of such institutions and companies, and to providing correspondent banking services at the request of other depository institutions or their holding companies "
+Bankers Bank Not Subject To Reserve Requirements,Bankers' bank whose activities are not limited by specific requirements of the Federal Reserve
+Bankers Bank Subject To Reserve Requirements,Bankers' bank whose activities are limited by specific requirements of the Federal Reserve
+Banking Product,Product provided to consumers and businesses by a depository institution
+Banking Service,Financial service offered by a depository institution
+Bankruptcy,Credit event involving a change in state or condition in which a party becomes insolvent
+Barrier Capital Protection Certificate,"Capital-protected product whose protection is defined as a percentage of the nominal price (e.g. 100 percent), with minimum redemption at expiry equivalent to the capital protection "
+Barrier Discount Certificate,"Participation certificate that enables the investor to acquire the underlying asset at a lower price in return for a limited payout, and for which the maximum redemption amount (Cap) is paid out if the barrier is never breached "
+Barrier Instrument Based Mini Future Certificate,Mini-future certificate that immediately expires if the barrier instrument trading price level is breached during product lifetime
+Barrier Option,"Option whose final exercise depends upon the path taken by the price of an underlying instrument, i.e., whose payoff depends on whether or not the underlying asset has reached or exceeded a predetermined price "
+Barrier Reverse Convertible Certificate,"Participation certificate whose payout is conditional: should the barrier never be breached, the nominal price plus coupon is paid at redemption; if the barrier is breached the product changes into a reverse convertible "
+Barrier Underlying Mini Future Certificate,Mini-future certificate that immediately expires if the barrier underlying level is breached during product lifetime
+Base Metal,"Common metal that tarnishes, oxidizes, or corrodes relatively quickly when exposed to air or moisture, that is widely used in commercial and industrial applications, such as construction and manufacturing "
+Base Quantity Kind,"Quantity in a conventionally chosen subset of a given system of quantities, where no quantity in the subset can be expressed in terms of the other quantities within that subset "
+Base Rate,Basic rate of interest on which the actual rate a bank charges on loans to its customers is calculated
+Base Unit,Measurement unit that is defined by a system of units to be the reference measurement unit for a base quantity
+Basel III Designation,"European Union wide securities designation, defined by the Basel Committee on Banking Supervision (BCBS), that classifies securities based on the quality of capital underlying the instrument "
+Basic Bank Account Identifier,Identifier that uniquely identifies an individual account at a specific financial institution in a particular country and which includes a bank identifier of the financial institution servicing that account
+Basis Swap,Swap in which payment streams are referenced to different bases
+Basket,"Collection of goods, services, or other things (e.g., financial contracts) that can be purchased and sold in some marketplace "
+Basket Certificate,Certificate whose underlying asset represents a fraction of a basket of securities that corresponds to the subscription ratio
+Basket Constituent,Component of a basket
+Basket Credit Default Swap,"Credit default swap that references a bespoke, synthetic portfolio of underlying assets whose components have been agreed to for a specific OTC derivative by the parties to the transaction "
+Basket Future,Futures contract whose underlying asset is a basket of securities and/or indices
+Basket Of Commodities,Custom basket whose constituents consist of one or more negotiable commodities
+Basket Of Credit Default Swaps,Basket of reference obligations are credit default swap instruments
+Basket Of Credit Risks,"Basket of instruments, legal entities, or a combination thereof collected for the purpose of analyzing risk "
+Basket Of Debt Instruments,Basket of securities whose constituents are debt instruments
+Basket Of Equities,Basket of securities whose constituents are listed shares
+Basket Of Indices,Basket composed of market indices
+Basket Of Indices Constituent,Single constituent of a basket of indices
+Basket Of Indices Constituent only comprises,"A subtype of associative entity 'comprises' to restrict child entities for the parent, Basket Of Indices Constituent "
+Basket Of Securities,"Basket composed of securities, typically of a particular asset class such as equities or bonds "
+Basket Option,"Option whose underlying asset is a group, or basket, of commodities, securities, indices, or currencies "
+Basket Warrant,Warrant that permits the holder to acquire a package or group of assets at a specified price during a specified period
+Beneficial Owner,Party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) may be in the name of another party (called a nominee or registered owner)
+Beneficial Ownership,Situation linking party that enjoys the benefits of ownership (such as receipt of income) of something even though its ownership (title) may be in the name of another party (called a nominee or registered owner) to the asset that they own
+Beneficiary,Party that receives some benefit or advantage or profits from something
+Benefit Corporation,"Not-for-profit corporation set up under specific state legislation, typically to provide some social benefit, without an obligation to maximize shareholder return "
+Bermudan Exercise Terms,"Exercise terms that stipulate that an option may only be exercised on predetermined dates within some exercise window, often on one day each month or at the date of expiration "
+Best Bid,Highest bid price a prospective buyer is willing to pay at a particular time for a given security
+Best Efforts Offering,"Securities offering whereby investment bankers commit to doing their best to sell the securities offered, but do not assume the full risk of an underwriter "
+Best Offer,Lowest price acceptable to a prospective seller for a given security at a particular point in time
+Bibliographic Citation,"A reference to an authoritative source for provenance or substatiation purposes; The form of bibliographic citation may be specific to a domain, publication, or community, thus specific properties to define the details are not provided. FRBR, ISO 690, and others provide reasonable approaches if none is explicitly required for a specification. "
+Bibliographic Code,An alpha-3 code that is a member of the set of bibliographic codes in ISO 639-2
+Bid Ask Spread,Difference between an offer (ask) price and a bid price
+Bid Price,Price a prospective buyer is willing to pay
+Bilateral Agreement,Agreement where two parties commit to perform specific actions or obligations towards each other
+Bilateral Contract,Contract where two parties commit to perform specific actions or obligations towards each other
+Bilateral Netting Provision,"Netting provision that occurs between two parties, in which mutual obligations are offset to determine a single net payment "
+Bill Of Exchange,"Short-term negotiable financial instrument consisting of an order in writing addressed by one person (the seller of goods) to another (the buyer), requiring the latter to pay a fixed amount of money on demand (a sight draft) or on a predetermined date (a time draft) "
+Birth Certificate,"An original document certifying the circumstances of the birth, or a certified copy of or representation of the ensuing registration of that birth "
+Birth Certificate Identification Scheme,System for allocating identifiers to birth certificates
+Birth Certificate Identifier,Identifier associated with a vital record documenting the birth of a child
+Blue Sky Law,"State-level securities regulation, designed to protect investors against securities fraud that require issuers to be registered and to disclose details of their offerings "
+Board Agreement,"Formal, legally binding agreement between members of the Board of Directors of the organization "
+Board Capacity,"Authority to act in a fiduciary capacity with respect to the organization, including but not limited to determining and executing corporate policy "
+Board Composition Control,"Situation in which a voting shareholder, entity owner, or some other party in the case of a not-for-profit organization, appoints and/or nominates someone to the board of directors of an organization for some period of time "
+Board Member,"Party that has fiduciary responsibility with respect to the organization, including but not limited to determining and executing corporate policy "
+Board Membership,Situation relating an individual member of the board of directors to the organization
+Board Of Directors,"Group of people comprising the governing body of an organization that has the authority to set organizational strategy and policies as well as to select and, to some degree manage, leadership "
+Bond,Tradable debt instrument representing a loan in which the issuer owes the holder(s) a debt
+Bond Amortization Payment Terms,"Terms that include a schedule for repayment of the principal over the lifetime of the bond, typically in equal payments at regular intervals "
+Bond Conversion Terms,Terms indicating when a convertible bond can be converted to another security (usually a publicly traded share issued by of the same issuer)
+Bond Coupon,"Interest rate on a debt security that the issuer promises to pay to the holder until maturity, expressed as an annual percentage of the face value "
+Bond Future,Futures contract whose underlying asset is at least one bond
+Bond Insurance,Insurance policy that a bond issuer purchases that guarantees the repayment of the principal and all associated interest payments to the bondholders in the event of default
+Bond Option,"Option giving the buyer (holder) the right, but not the obligation, to buy or sell (depending on whether it is a call or a put) a bond at a certain price on or before a specified date "
+Bond Pool,Debt pool of consisting of bonds
+Bond Principal Repayment Terms,Terms for the repayment of the principal on a bond
+Bond Purchase Right,Purchase right that gives a prospective acquiree's bondholders the right to buy bonds of the firm or bonds of anyone who acquires the firm at a deep discount to their fair market value
+Bond Registrar,Party responsible for maintaining records on behalf of the issuer that identify the owners of a registered bond issue
+Bond Subscription Right,Subscription right entitling existing bond holders to subscribe to new securities at a price normally lower than the prevailing market price
+Bond Variable Coupon,Bond coupon that has a variable interest rate
+Bond With Partial Call,Bond with a feature whereby the issue can be partially called for amounts that are at the discretion of the issuer
+Bond With Published Sinking Fund,Bond whereby amortization is via a known and published schedule
+Bond With Warrant,"Bond that is issued together with one or more warrant(s) attached as part of the offer, the warrant(s) granting the holder the right to purchase a designated security, often the common stock of the issuer. "
+Book Entry Settlement,Settlement in which all transactions are processed via electronic book entries rather than the physical exchange of security certificates or other documentation
+Book Value Per Share,The amount of the shareholders' equity (total assets minus total liabilities) that each common share would receive if the company were liquidated
+Booking Method,"Method that determines the location of the legal or other record of a trade, which in the case of some derivative instruments may be different from the physical trading location"
+Border Control Checkpoint,Place where border inspections are carried out
+Broker Dealer,"Party that is registered to act as a broker or a dealer, or both, in securities transactions"
+Broker Role,"Role of a party that is registered to act as a broker or a dealer, or both, in securities transactions, specifically as a party that executes orders on behalf of clients"
+Budget,"Financial plan for a defined period, typically a year, that describes how resources will be allocated and spent"
+Budgetary Allocation,Amount of funds assigned to a specific purpose or activity within a budget
+Budgetary Component,"A portion or sub-category within a financial budget, used for allocation and tracking"
+Business Activity,An action or set of actions undertaken by an organization to achieve an economic goal or other stated purpose
+Business Address,A specific location where a business is conducted or where legal correspondence and official documents can be delivered
+Business Continuity Plan,A plan that outlines procedures and instructions an organization must follow in the face of disaster or business disruption to ensure essential functions continue
+Business Day,"A day (typically Monday through Friday) during which normal business is conducted, excluding weekends and public holidays"
+Business Entity,"An organization formed to conduct business, engage in commerce, or carry out a mission, whether for-profit or not-for-profit"
+Business Event,"Something that happens during the course of business, which may be internal or external, and which may or may not require a response"
+Business Hours,The specific period of time during a day when a business is open and conducting its regular operations
+Business Identifier,A unique code or number assigned to a legal entity to identify it in various business or legal contexts
+Business Legal Name,The official and registered full name of a business entity
+Business Location,The physical site or address where a business entity operates or is registered to operate
+Business Model,"The conceptual structure supporting the viability of a business, including its purpose, processes, technology, and finances"
+Business Process,"A collection of related, structured activities or tasks that produce a specific service or product for a particular customer or market"
+Business Purpose,The stated reason or objective for which a business entity is formed and operates
+Business Relationship,A formal or informal connection or arrangement between two or more business entities for mutual benefit or to conduct a transaction
+Business Sector,A broad classification of economic activity grouping companies that are similar in the product or service they provide
+Buyer,"The party acquiring goods, services, or assets in a transaction"
+Call Date,The date on which an issuer of a callable security can choose to redeem the security before its maturity date
+Call Option,"An option contract that gives the holder the right, but not the obligation, to buy an underlying asset at a specified price (strike price) on or before a specified date (expiration date)"
+Callable Bond,A bond that the issuer may redeem before its stated maturity date
+Callable Swap,"A swap contract where one of the counterparties has the option, but not the obligation, to terminate the swap on a specified call date(s)"
+Capability,The ability of an organization or system to perform a specific action or produce an intended outcome
+Capacity (acty),"The potential ability to execute an action or fulfill a role, often measured by resources or competence"
+Capacity (fnd),"The maximum output or volume that a process, asset, or entity can sustain over a period of time"
+Capital,"Financial assets, funds, or resources available for use in a business or project"
+Capital Adequacy,The amount of capital a bank or other financial institution holds relative to its risk-weighted assets to ensure its financial stability
+Capital Asset,An asset with a useful life of more than one year that is not intended for sale in the regular course of the business's operation
+Capital Gain,The profit earned on the sale of a capital asset that was held for more than a specified period
+Capital Goods,Physical assets that a company uses in the production process to manufacture products or provide services
+Capital Instrument,"A financial security issued by a company to raise capital, such as common stock, preferred stock, or bonds"
+Capital Protection Certificate,An investment product designed to provide a guaranteed return of the principal amount invested (or a large percentage of it) at maturity
+Capital Requirement,The minimum amount of capital that financial institutions are required to hold by regulatory authorities
+Capital Stock,"The total amount of stock a corporation is authorized to issue, as specified in its corporate charter"
+Capitalization,The total amount of money raised by a company by issuing debt and/or equity
+Career,An occupation undertaken for a significant period of a person's life and with opportunities for progress
+Career Path,A sequence of jobs that constitute a person's career progression in an industry or field
+Carry Trade,A trading strategy that involves borrowing at a low interest rate and investing in an asset that provides a higher rate of return
+Cash,"Currency (banknotes and coins) held by an individual or organization, or money available in a bank account"
+Cash Account,"An investment account where all transactions must be settled with cash in the account, as opposed to a margin account"
+Cash Asset,An asset that is cash or can be quickly converted into cash with minimal loss of value
+Cash Collateral,Cash or cash equivalents pledged by a borrower to a lender to secure a loan or margin requirement
+Cash Deposit,The act of placing cash into a bank account or similar financial holding
+Cash Dividend,A payment made by a corporation to its shareholders in the form of cash
+Cash Flow,"The total amount of money being transferred into and out of a business, especially as affecting liquidity"
+Cash Future,A futures contract that is settled with a cash payment rather than the physical delivery of the underlying asset
+Cash Settlement,"The process of settling a financial contract, such as a derivative, with a net cash payment rather than the physical delivery of the underlying asset"
+Central Bank,"An independent national authority that issues currency, manages the money supply, and controls the country's monetary policy"
+Central Counterparty,"An entity that interposes itself between counterparties to contracts traded in one or more financial markets, becoming the buyer to every seller and the seller to every buyer"
+Central Repository,"A central database or storage location for data, often used for regulatory reporting or trade data"
+Certificate,"A document attesting to a fact, qualification, or promise"
+Certificate Of Deposit,A time deposit that earns a specified interest rate over a fixed period and is typically issued by a bank
+Certified Document,A copy of a document that is formally guaranteed to be a true and accurate copy of the original
+Certified Public Accountant,"A professional designation for accountants who have met state licensing requirements, including exams and experience"
+Change Event,"An event that marks a significant shift or alteration in the state, condition, or structure of an entity or process"
+Characteristic,An inherent or distinguishing feature or quality of a thing
+Characteristic Value,The specific data or measure associated with a characteristic
+Charter,"A legal document that establishes a corporation, city, university, or other organization and defines its mission and structure"
+Chief Executive Officer,"The highest-ranking executive in a company, responsible for making major corporate decisions, managing the overall operations and resources of a company, and acting as the main point of communication between the board of directors and corporate operations"
+Chief Financial Officer,"The corporate officer primarily responsible for managing the financial risks of the corporation, financial planning, and financial reporting"
+Child,A young human being below the age of full legal responsibility
+Citizenship,"The status of being a legally recognized member of a country, state, or commonwealth"
+Claim,"A formal request by a party to an insurer, debtor, or other party for payment or compensation under the terms of a contract"
+Claim Type,"A classification of a claim based on the nature of the alleged damage, loss, or obligation"
+Classification,A grouping or sorting of things according to a system or set of criteria
+Classification Scheme,A systematic arrangement or structure for grouping items or concepts based on shared characteristics
+Classifier,An entity used to categorize or assign a class to another entity based on some characteristic or rule
+Clearing House,A financial institution that acts as an intermediary and assumes the role of matching and guaranteeing trades between a buyer and a seller
+Client,A party that purchases goods or services from another party
+Client Account,An account held by a service provider on behalf of a client to manage their assets or transactions
+Close-End Fund,A type of mutual fund that issues a fixed number of shares via an IPO and then trades them on a stock exchange
+Close-Out Netting,"A provision in a master agreement that requires all obligations between two parties to be netted to a single, final payment upon a default or termination event"
+Closed Market,A financial market that is not currently open for trading
+Closed-End Mortgage,A mortgage agreement that prevents the borrower from taking out additional funds against the property
+Closing Date,The date on which the sale of a property or the finalization of a financial transaction is legally completed
+Closing Price,The final price at which a security is traded on a given day
+Collateral,An asset or property pledged by a borrower to a lender to secure a loan; it may be seized by the lender if the borrower defaults
+Collateral Agreement,A legal contract documenting the terms under which collateral is provided to secure a financial obligation
+Collateral Manager,"A party responsible for managing the collateral securing a structured finance transaction, such as a CLO or CDO"
+Collateralized Debt Obligation,"A complex structured finance product backed by a pool of assets, such as loans, bonds, or other debt instruments"
+Collateralized Loan Obligation,A type of CDO that is backed by a pool of corporate loans
+Collection Agency,A business that specializes in collecting debts for creditors
+Commercial Bank,"A financial institution that accepts deposits, offers checking account services, makes various loans, and offers basic financial products"
+Commercial Paper,"A short-term, unsecured debt instrument issued by large corporations to raise funds to meet short-term liabilities"
+Commercial Property,"Real estate used for business activities, such as office buildings, retail centers, or industrial warehouses"
+Commission,A fee charged by a broker or agent for executing a trade or transaction on behalf of a client
+Commodity,"A raw material or primary agricultural product that can be bought and sold, such as gold, oil, or coffee"
+Commodity Exchange,A market where contracts for the future delivery of physical commodities or financial derivatives based on them are bought and sold
+Commodity Futures Contract,A futures contract where the underlying asset is a physical commodity
+Commodity Option,An option contract where the underlying asset is a commodity or a commodity future
+Common Carrier,A person or company that transports goods or people for a fee and is available to the general public
+Common Stock,A security that represents ownership in a corporation; holders typically have voting rights and are entitled to a share of the company's profits
+Communication Address,"An address used for transmitting information, which can be physical (postal) or electronic (email)"
+Communication Channel,The medium or pathway through which information is transmitted from a sender to a receiver
+Community Development Bank,A financial institution focused on serving low- to moderate-income communities that have historically been underserved by conventional banks
+Company,A legal entity formed by a group of people to engage in and operate a business (commercial or industrial) enterprise
+Compensatory Damage,Money awarded to a plaintiff to compensate for actual loss or injury suffered
+Competent Authority,"An official or government body that has the legally delegated authority to issue a permit, license, or perform a regulatory function"
+Complaint,"A formal statement alleging a grievance or wrong, typically filed with a regulatory body or in a court of law"
+Compliance Requirement,"A rule, regulation, or law that a business must adhere to, often enforced by a governing body"
+Component,A distinct part of a larger system or whole
+Composite Index,A market index that is constructed by combining the components of several other indices
+Comprehensive Income,A measure of an entity's change in equity during a period from transactions and other events from non-owner sources
+Compromise,An agreement or a settlement of a dispute that is reached by each side making concessions
+Compound Interest,Interest calculated on the initial principal and also on the accumulated interest of previous periods
+Concentration Limit,"A constraint imposed on the maximum exposure an entity can have to a single counterparty, industry, or asset class to mitigate risk"
+Condition,A state of being or a prerequisite that must be met
+Conflict Of Interest,A situation in which a person or organization has competing professional or personal interests that could make it difficult to fulfill their duties impartially
+Consent,A voluntary agreement to a proposition or action
+Consent Order,A legally binding agreement between a government agency (regulator) and a company or individual that resolves a regulatory dispute without admission of guilt
+Constitutional Document,"A foundational legal document that establishes the existence, structure, and operational rules of a legal entity, such as Articles of Incorporation or a Charter"
+Constitutional Right,A right guaranteed to citizens by the constitution of a country or state
+Consumer,A party that purchases goods and services for personal use rather than for manufacture or resale
+Consumer Price Index,A measure of the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services
+Contact Information,"Data used to communicate with a party, such as a phone number, email address, or postal address"
+Contact Point,A specific individual or department designated for communication within an organization
+Contingency Plan,"A plan designed to take a possible future event or circumstance into account, especially a plan B for a possible disaster"
+Contingent Obligation,An obligation that is conditional on the occurrence or non-occurrence of one or more future events
+Continuation Option,A clause in an insurance or financial contract that gives a party the right to extend the agreement under certain conditions
+Contract,A legally binding agreement between two or more parties that defines their rights and obligations
+Contract Date,The date on which a contract is formally executed or becomes legally effective
+Contract Maturity Date,The date on which the obligations of a contract are set to expire or be fully fulfilled
+Contract Terms,The specific conditions and stipulations that govern the rights and obligations of the parties to a contract
+Contractual Agreement,A mutual agreement between two or more parties that is legally binding
+Control,The power to direct the management and policies of a business entity
+Control Agreement,"A legal agreement that establishes the rights of a secured party over a debtor's assets, often used in secured transactions"
+Control Event,An event that triggers a change in the ability of a party to control or direct an entity's policies and management
+Control Right,"The legal right of a party to influence or direct the management, policies, and actions of another entity"
+Controlled Entity,"A legal entity over which another entity exercises control, typically through ownership of a majority of voting shares"
+Controller,The party that exercises control over another entity
+Controlling Interest,A sufficient percentage of voting stock in a corporation to influence or control the company's management
+Conventional Mortgage,A home loan that is not guaranteed or insured by a government agency like the FHA or VA
+Conversion Feature,"A provision in a security that allows the holder to exchange it for another form of security, typically common stock"
+Conversion Ratio,The number of shares of a new security that an investor will receive for each convertible security they hold
+Convertible Bond,A bond that can be converted into a predetermined amount of the issuer's common stock at the holder's option
+Convertible Preferred Stock,Preferred stock that includes an option for the holder to convert it into a fixed number of common shares
+Corporate Action,An event initiated by a corporation that affects its issued securities and stakeholders
+Corporate Bond,A debt security issued by a corporation to raise capital
+Corporate Charter,The foundational legal document that establishes a corporation's existence and defines its structure and powers
+Corporate Governance,"The system of rules, practices, and processes by which a company is directed and controlled"
+Corporate Head Office,The primary location where a company's executive and administrative functions are concentrated
+Corporation,"A legal entity separate from its owners, created under the laws of a specific jurisdiction"
+Cost,The monetary value of resources consumed to produce goods or services
+Cost Of Capital,The required rate of return that a company must earn on its existing asset base to maintain the current value of its securities
+Cost Of Goods Sold,The direct costs attributable to the production of the goods sold by a company
+Counterparty,A party involved in a financial transaction
+Counterparty Credit Risk,The risk that a counterparty to a financial transaction will default on its obligations
+Country,A sovereign state or a political territory with a defined geographic boundary
+Country Code,A short alphabetic or numeric code used to uniquely identify a country
+Coupon,The periodic interest payment made by the issuer of a debt security to the holder
+Coupon Date,The specific date on which an interest payment (coupon) is due to the bondholder
+Coupon Frequency,The number of times per year that a coupon payment is made
+Covenant,"A formal agreement or promise, often legally binding, included in a loan or bond agreement"
+Credit Agency,An organization that collects credit information about consumers and businesses and sells it to creditors in the form of credit reports
+Credit Default Swap,A financial derivative that allows one party to swap the credit risk of a reference entity with another party
+Credit Event,"An event, such as bankruptcy or failure to pay, that triggers a payout under a Credit Default Swap contract"
+Credit Facility,A type of loan or financing arrangement that allows a business to borrow funds up to a certain limit
+Credit Rating,An assessment of the creditworthiness of a borrower in general or with respect to a specific debt or financial obligation
+Credit Risk,The potential that a borrower will default on a debt obligation
+Credit Union,"A non-profit financial cooperative owned by its members, which offers financial services similar to a bank"
+Currency,"A medium of exchange, such as banknotes and coins, typically issued by a government"
+Currency Exchange Rate,The rate at which one currency will be exchanged for another
+Currency Pair,"A quotation of the exchange rate for two different currencies, such as EUR/USD"
+Currency Swap,A swap in which the two parties exchange principal and interest payments in different currencies
+Customer,A party who receives a service or product from a seller or service provider
+Custodian,A financial institution that holds a customer's securities for safekeeping to minimize the risk of theft or loss
+Custodian Bank,A bank specializing in acting as a custodian for investment funds and institutional investors
+Custody Agreement,A legal contract that defines the terms under which a custodian will hold and manage a client's assets
+Data Element,A unit of data that is considered indivisible for the purpose of a particular analysis
+Data Model,An abstract model that organizes elements of data and standardizes how they relate to one another
+Date,"A particular day, month, and year"
+Date Of Birth,"The day, month, and year a person was born"
+Date Of Death,"The day, month, and year a person passed away"
+Dealer,"A party that stands ready to buy or sell securities for its own account, acting as a principal in a transaction"
+Dealer Role,"The capacity in which a party acts as a principal in a securities transaction, trading from its own inventory"
+Debt,An obligation that requires one party (the debtor) to pay money or transfer other agreed-upon value to another party (the creditor)
+Debt Instrument,A financial security representing a loan that an issuer must repay to the holder
+Debt Obligation,"A specific requirement to repay a debt, often defined by a schedule and set of terms"
+Debt Pool,"A collection of various debt instruments grouped together, often used as the underlying assets for a structured finance product"
+Debt Security,"A fungible, negotiable financial instrument representing a debt"
+Debtor,The party that owes a debt or is under a financial obligation to another party
+Decision,A choice made after considering the available options
+Decision Maker,The person or entity responsible for making a decision
+Decision Point,A specific moment or stage in a process where a choice must be made
+Deed,"A legal document that is signed and delivered, especially one regarding the ownership of property or legal rights"
+Default,"A failure to meet the legal obligations (or terms) of a loan, such as when a borrower fails to make a required interest or principal payment"
+Default Risk,The risk of loss due to a debtor's failure to repay a loan or meet contractual obligations
+Deferred Compensation,A portion of an employee's salary or bonus that is paid out at a later date
+Deferred Interest Bond,A bond that allows the issuer to defer or postpone interest payments for a specified period
+Defined Benefit Plan,A retirement plan where an employer guarantees a specific monthly benefit to the employee upon retirement
+Defined Contribution Plan,A retirement plan where the benefit is not guaranteed; the final payout depends on the contributions made and the investment performance
+Degree,An academic title conferred by a college or university for the successful completion of a course of study
+Delivery Obligation,"The legal requirement to physically deliver an asset as specified in a contract, such as a futures contract"
+Delivery Point,The specified location where a physical asset must be delivered to settle a contract
+Demand Deposit,A bank account (like a checking account) from which funds can be withdrawn at any time without advance notice
+Denomination,"The face value or unit amount of a currency, security, or other financial instrument"
+Dependent Child,A child who relies on another person (parent or guardian) for financial support
+Deposit Account,An account held at a financial institution where funds are placed for safekeeping and can be withdrawn under certain conditions
+Depository Institution,A financial institution (like a bank or credit union) that is legally permitted to accept monetary deposits from the public
+Depreciation,"A reduction in the value of an asset over time, due in particular to wear and tear"
+Derivative,"A financial instrument whose value is derived from an underlying asset, rate, or index"
+Derivative Contract,A legal agreement that defines the terms of a derivative transaction
+Designated Contract Market,A board of trade that is registered with the CFTC and allows for the trading of futures and options on futures contracts
+Designated Investment Company,A classification for certain pooled investment vehicles under regulatory law
+Director,A person who is part of the governing body (Board of Directors) of a corporation
+Disability,"A physical or mental condition that limits a person's movements, senses, or activities"
+Disclosure,"The act of making information known, especially information that is legally required to be revealed"
+Discount Rate,The interest rate charged to commercial banks and other depository institutions on loans they receive from their regional Federal Reserve Bank's lending facility
+Discounted Cash Flow,A valuation method used to estimate the value of an investment based on its expected future cash flows
+Disbursement,The action of paying out money
+Distribution,"The act of distributing assets, income, or securities to shareholders or beneficiaries"
+Distribution Right,The legal right of a shareholder to receive a share of a corporation's earnings or assets
+Dividend,"A payment made by a corporation to its shareholders, usually as a distribution of profits"
+Dividend Date,The date on which a dividend payment is scheduled to be made to shareholders
+Dividend Rate,The amount of the dividend payment expressed as an annual percentage of the security's par value
+Document,A written or electronic record that contains official or factual information

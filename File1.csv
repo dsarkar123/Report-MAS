@@ -1,0 +1,10 @@
+Service Domain,Service Domain Defination,Subdomain,Data Owner name
+Account Management,a collection of service domain responsible for handling variuos aspects of banking account operations,"Account maintenance , Account closure",Jane Doe
+Customer Relationship Management,"the domain governs the full lifecycle of customer engagement , including onboarding , relationship development and eventual closure ","Customer profile , customer interaction ",Jane Doe
+Loan Management,this domain is responsible for the servicing and administration of loan agreements throughout their lifecycles,"Loan origination , Loan fulfilment ",John Smith
+Investment Portfolio Management,Orchestrating the investment and rebalancing of an investment portfolio to optimize gains while remaining within the terms of portfolio charter or agreement,"Portfolio Analysis , Portfolio Planning ",John Smith
+Trade Finance,"Trade Finance covers a broad range of financing,guarantee and transaction processing services. This service domain handles the fulfilment of a flexible line of credit provided to a cutomer active in import/export business to provide them access to trade-related financing","Letter of credit ,Documentary collection",Alice Johnson
+Payments,"Initiating, validating and execueting payment transactions for both consumers and business customers. This includes domestic and international transfers, single and recurring payments , and orchestration of payment instructions.","Payment execution, Payment reconciliation",Robert Lee
+Product Management,"Product Design , Product Inventory ","Product design, Product inventory ",Robinson Wilson
+Sales,"Managing the sales process for banking products and services, including lead generation, qualification, proposal development and closure . It supports both direct and assisted sales channels and integrates with  ","Sales planning , sales execution ",Robinson Wilson
+Marketing,"Planning, execueting and analyzing marketing campaigns and activities to promote banking products and services , enhance brand visiblity and support customer acquistion and retention strategies.","Campaign management , Market Analysis",Robinson Wilson
